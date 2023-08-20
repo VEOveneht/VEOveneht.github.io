@@ -1,0 +1,83 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+root {
+    --maincolor: rgb(68, 68, 68);
+}
+
+*,
+html {
+    font-family: 'Prompt', sans-serif;
+    padding: 0%;
+    margin: 0%;
+}
+
+.main {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    border-top-left-radius: 10vh;
+    border-bottom-right-radius: 10vh;
+}
+
+.main-inner-container {
+    height: 75vh;
+    width: 125vh;
+    padding: 20px;
+}
+
+.inner-container {
+    height: 69vh;
+    width: 119vh;
+    padding: 3vh;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    width: 119vh;
+}
+
+.p-card {
+    width: 121vh;
+    height: 59vh;
+}
+
+.a-icon {
+    margin: 20px;
+}
+
+.icon {
+    text-decoration: none;
+    color: black;
+    display: flex;
+}
+
+
+/* .container-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    background-color: grey;
+}
+
+i {
+    padding: 5px;
+}
+
+footer {
+    background-color: grey;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+} */
