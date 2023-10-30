@@ -9,8 +9,8 @@
 
 /* COLOR */
 
-var color {
-  background-color: violet;
+:root {
+  --violet: rgb(226, 111, 226);
 }
 
 /* Navigation Bar */
@@ -64,7 +64,7 @@ var color {
 }
 
 .myPict {
-  background-color: violet;
+  background-color: var(--violet);
   height: 20vh;
   width: 20vh;
   border-radius: 50%;
@@ -98,7 +98,7 @@ var color {
   text-align: center;
   height: 20vh;
   width: 50vh;
-  background-color: violet;
+  background-color: var(--violet);
   border-top-left-radius: 2.5vh;
   border-top-right-radius: 2.5vh;
 }
@@ -110,7 +110,7 @@ var color {
   text-align: center;
   height: 20vh;
   width: 50vh;
-  background-color: violet;
+  background-color: var(--violet);
 }
 
 #rcontact {
@@ -120,7 +120,7 @@ var color {
   text-align: center;
   height: 20vh;
   width: 50vh;
-  background-color: violet;
+  background-color: var(--violet);
 }
 
 #rabout {
@@ -130,7 +130,7 @@ var color {
   text-align: center;
   height: 20vh;
   width: 50vh;
-  background-color: violet;
+  background-color: var(--violet);
   border-bottom-right-radius: 2.5vh;
   border-bottom-left-radius: 2.5vh;
 }
