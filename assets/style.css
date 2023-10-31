@@ -18,7 +18,7 @@
 .topnav {
   overflow: hidden;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   height: 7vh;
   width: 100%;
