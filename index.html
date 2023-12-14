@@ -1,61 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>JS Rekursif</title>
+	</head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="/assets/style.css" />
-    <link rel="icon" type="png" href="assets/img/maskot.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+	<body>
+		<img src="kucing.png" alt="Kucing Ngetawain" />
+		<div id="audio">
+			<audio controls autoplay loop>
+				<source src="ketawa.mp3" type="audio/mpeg" />
+				Your browser does not support the audio tag.
+			</audio>
+		</div>
+		<div id="text"></div>
 
-<body>
-    <div class="topnav" id="myTopnav()">
-        <a href="#" class="active" id="home" onclick="cHome()">Home</a>
-        <a href="#" id="project" onclick='cProject()'>Project</a>
-        <div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
-        </div>
-        <a href="#" id="contact" onclick='cContact()'>Contact</a>
-        <a href="#" id="about" onclick="cAbout()">About</a>
-    </div>
-
-    <div class="profile">
-        <h1 class="myPict">
-            <a>
-                <img src="/assets/img/me.png" alt="Lisan Shidqi Farizan" loading="lazy">
-            </a>
-    </div>
-    <div id="wrapm">
-        <div id="rhome">
-            <h1>
-                Hi ;) I am Lisan Shidqi Farizan
-            </h1>
-            <p>i'm Front End Developer</p>
-        </div>
-
-        <div id="rproject">
-            <h1>PROJECT</h1>
-            <h2>NONE</h2>
-        </div>
-
-        <div id="rcontact">
-            <h1>CONTACT</h1>
-            <h2>Just Contact</h2>
-        </div>
-        <div id="rabout">
-            <h1>ABOUT</h1>
-            <h2>Just about</h2>
-        </div>
-    </div>
-
-    <script src="/assets/js/main.js"></script>
-</body>
-
-</html>
-
+		<script src="index.js"></script>
+	</body>
 </html>
