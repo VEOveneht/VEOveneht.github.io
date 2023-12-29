@@ -1,0 +1,41 @@
+/* Gaya umum yang berlaku untuk semua tipe layar */
+
+html {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background-color: #f0f0f0;
+	color: #333;
+}
+
+.wrapper {
+	width: 80vh;
+	height: 50vh;
+	background-color: rosybrown;
+	position: center;
+	align-items: center;
+}
+
+ul li {
+	list-style: none;
+}
+
+/* Gaya yang hanya berlaku untuk layar dengan lebar maksimal 600px */
+
+@media screen and (max-width: 600px) {
+	body {
+		font-size: 14px;
+	}
+}
+
+/* Gaya yang hanya berlaku untuk layar dengan orientasi lanskap */
