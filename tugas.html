@@ -9,42 +9,42 @@
 	</head>
 
 	<body>
-		<!-- <nav>
-			<div class="wrapper">
+		<nav>
+			<div>
 				<ul>
 					<li>
 						<a href="index.html" onclick="profile()" id="profile">Profile</a>
 					</li>
 					<li>
-						<a href="tugas.html" onclick="tugas()" id="tugas">Tugas</a>
+						<a href="tugas.html" onclick="tugas()">Tugas</a>
 					</li>
 					<li>
 						<a href="kontak.html" onclick="kontak()" id="kontak">Kontak</a>
 					</li>
 				</ul>
 			</div>
-		</nav> -->
+		</nav>
 
 		<main>
 			<!-- Beranda -->
 			<div class="wrapper">
-				<div>
-					<!-- Image Gua -->
-					<a><img src="" alt="" /></a>
-					<h2>Lisan Shidqi Farizan</h2>
-				</div>
-
-				<div>
+				<div id="tugas">
+					<h1>Selamat Datang di Tugas Project Kami</h1>
+					<input type="number" id="num1" name="num1" />
+					<select id="operator" name="operator">
+						<option value="tambah">+</option>
+						<option value="kurang">-</option>
+						<option value="kali">*</option>
+						<option value="bagi">/</option>
+					</select>
+					<input type="number" id="num2" name="num2" />
+					<button onclick="calculate()">Hitung</button>
+					<p id="hasil">Hasil:</p>
+					<p>Kami Bertiga Membuat Kalkulator Web</p>
 					<ul>
-						<li>
-							<a href="index.html" onclick="profile()" id="profile">Profile</a>
-						</li>
-						<li>
-							<a href="tugas.html" onclick="tugas()">Tugas</a>
-						</li>
-						<li>
-							<a href="kontak.html" onclick="kontak()" id="kontak">Kontak</a>
-						</li>
+						<li>Lisan Shidqi Farizan</li>
+						<li>Risky Prihadi</li>
+						<li>Rifqi Dyas Aqil Prasetyo</li>
 					</ul>
 				</div>
 			</div>
