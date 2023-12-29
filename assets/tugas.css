@@ -1,17 +1,10 @@
 /* Gaya umum yang berlaku untuk semua tipe layar */
 
-html {
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
 body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100%;
+	height: 100vh;
 	margin: 0;
 	font-family: Arial, sans-serif;
 	background-color: #f0f0f0;
