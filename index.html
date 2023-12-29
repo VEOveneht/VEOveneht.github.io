@@ -28,7 +28,7 @@
 		<main>
 			<!-- Beranda -->
 			<div class="wrapper">
-				<div>
+				<div id="profile">
 					<!-- Image Gua -->
 					<a><img src="" alt="" /></a>
 					<h2>Lisan Shidqi Farizan</h2>
@@ -37,19 +37,38 @@
 				<div>
 					<ul>
 						<li>
-							<a href="index.html" onclick="profile()" id="profile">Profile</a>
+							<a href="#" onclick="profile()">Profile</a>
 						</li>
 						<li>
-							<a href="tugas.html" onclick="tugas()">Tugas</a>
+							<a href="#" onclick="tugas()">Tugas</a>
 						</li>
 						<li>
-							<a href="kontak.html" onclick="kontak()" id="kontak">Kontak</a>
+							<a href="kontak.html" onclick="kontak()">Kontak</a>
 						</li>
+					</ul>
+				</div>
+				<div id="kalkulator">
+					<h1>Selamat Datang di Toko Kami</h1>
+					<input type="number" id="num1" name="num1" />
+					<select id="operator" name="operator">
+						<option value="tambah">+</option>
+						<option value="kurang">-</option>
+						<option value="kali">*</option>
+						<option value="bagi">/</option>
+					</select>
+					<input type="number" id="num2" name="num2" />
+					<button onclick="calculate()">Hitung</button>
+					<p id="hasil">Hasil:</p>
+					<p>Kami Bertiga Membuat Website Toko</p>
+					<ul>
+						<li>Lisan Shidqi Farizan</li>
+						<li>Risky Prihadi</li>
+						<li>Rifqi Dyas Aqil Prasetyo</li>
 					</ul>
 				</div>
 			</div>
 		</main>
 
-		<script src="index.js"></script>
+		<script src="assets/js/penghitung.js"></script>
 	</body>
 </html>
