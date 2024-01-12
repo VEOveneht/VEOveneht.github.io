@@ -4,7 +4,6 @@
 </p>
 
 <p align="center">
-
 - Sebut saja VEO
 - Usia 20 Tahun
 - Saya masih sangat pemula
