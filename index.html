@@ -1,74 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" type="png" href="assets/img/maskot.png" />
-		<link rel="stylesheet" href="assets/tugas.css" />
-		<title>Lisan Shidqi Farizan</title>
-	</head>
 
-	<body>
-		<!-- <nav>
-			<div class="wrapper">
-				<ul>
-					<li>
-						<a href="index.html" onclick="profile()" id="profile">Profile</a>
-					</li>
-					<li>
-						<a href="tugas.html" onclick="tugas()" id="tugas">Tugas</a>
-					</li>
-					<li>
-						<a href="kontak.html" onclick="kontak()" id="kontak">Kontak</a>
-					</li>
-				</ul>
-			</div>
-		</nav> -->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="icon" href="assets/img/icon.png" type="image.png">
+    <title>Lisan Shidqi Farizan</title>
+</head>
 
-		<main>
-			<!-- Beranda -->
-			<div class="wrapper">
-				<div id="profile">
-					<!-- Image Gua -->
-					<a><img src="" alt="" /></a>
-					<h2>Lisan Shidqi Farizan</h2>
-				</div>
+<body>
+    <main>
+        <!-- Navigation for Contact Me -->
+        <nav role="navigation">
+            <a href="#" class="logo"><img src="" alt="" />Lisan</a>
+            <ul>
+                <li><a>Profile</a></li>
+                <li><a>Contact</a></li>
+            </ul>
+        </nav>
+        <section class="banner"></section>
+        <!-- This Section is for My Top Profile -->
+        <section id="profile-top">
+            <div class="container">
+                <div id="prof">
+                    <article>
+                        <h1>Front-end Developer</h1>
+                        <p>
+                            Coding beautifully brings me joy, and I'm passionate about what I do.
+                        </p>
+                    </article>
+                    <figure>
+                        <img src="assets/img/me.png " style="width: 180px; border-radius: 10px;" />
+                        <h1>Lisan Shidqi Farizan</h1>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <!-- and it's My Botoom Profile, it's Description -->
+        <section id="profile-bottom">
+            <div class="container">
+                <div>
+                    <article>
+                        <h1>Hi, I'm Lisan. Nice to meet you.</h1>
+                        <p>
+                            Coding is my passion, and creating websites that are not only functional but also present an appealing aesthetic is my commitment. My dedication to each project is reflected in the effort to create a stunning look.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- It's for MySkills -->
+        <section id="profile-skills">
+            <div class="container">
+                <article>
+                    <h3>Frontend Developer</h3>
+                    <p>
+                        Sometimes, I enjoy writing code from scratch, building a foundation from scratch to come up with a unique solution. I enjoy the process of bringing ideas to life in the browser, developing concepts into stunning displays that function perfectly.
+                    </p>
+                    <h3>Language I use:</h3>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>React Query</li>
+                        <li>Node</li>
+                        <li>Git</li>
+                        <li>MongoDB</li>
+                    </ul>
+                    <h3>Dev Tools:</h3>
+                    <ul>
+                        <li>Github</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+        <!-- My Recent Works, so Many but IDK What Should i Show Here -->
+        <section class="recent-work"></section>
+        <!-- This is Our Project -->
+        <section class="startup-project">
+            <div class="container">
+                <div>
+                    <article>
+                        <h3>My Startup Projects</h3>
+                        <p>
+                            I am a lover of digital products. I have used many applications and web. curiosity about how the web, apps and games work. Ultimately, I want to try making my own.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- Staring Project With Us? -->
+        <section class="working-together">
+            <div class="container">
+                <div>
+                    <div>
+                        <p>Interested in working together? I’ll buy the coffee.</p>
+                    </div>
+                    <div>
+                        <button>LET'S GO!</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+    </main>
+    <!-- Footer Section There's my Social Media and my Quotes -->
+    <footer>
+        <div>Quotes</div>
+        <div>Social Media</div>
+        <div>Handcraftted by me &copy;2023</div>
+    </footer>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function() {
+            const nav = document.querySelector("nav");
+            nav.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+</body>
 
-				<div>
-					<ul>
-						<li>
-							<a href="#" onclick="profile()">Profile</a>
-						</li>
-						<li>
-							<a href="#" onclick="tugas()">Tugas</a>
-						</li>
-						<li>
-							<a href="kontak.html" onclick="kontak()">Kontak</a>
-						</li>
-					</ul>
-				</div>
-				<div id="kalkulator">
-					<h1>Selamat Datang di Toko Kami</h1>
-					<input type="number" id="num1" name="num1" />
-					<select id="operator" name="operator">
-						<option value="tambah">+</option>
-						<option value="kurang">-</option>
-						<option value="kali">*</option>
-						<option value="bagi">/</option>
-					</select>
-					<input type="number" id="num2" name="num2" />
-					<button onclick="calculate()">Hitung</button>
-					<p id="hasil">Hasil:</p>
-					<p>Kami Bertiga Membuat Website Toko</p>
-					<ul>
-						<li>Lisan Shidqi Farizan</li>
-						<li>Risky Prihadi</li>
-						<li>Rifqi Dyas Aqil Prasetyo</li>
-					</ul>
-				</div>
-			</div>
-		</main>
-
-		<script src="assets/js/penghitung.js"></script>
-	</body>
 </html>
