@@ -1,0 +1,152 @@
+:root {
+	--01: #1d34f5;
+	--02: #931df5;
+	--03: #4c1ef5;
+	--04: #1d78f5;
+	--05: #d91df5;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	/* font-family: "Archivo Black", sans-serif;
+	font-weight: 400;
+	font-style: normal; */
+}
+
+body {
+	background-color: var(--01);
+	text-align: center;
+	color: white;
+}
+
+/* Awal nav line 13 - 20 */
+
+nav {
+	font-family: "Archivo Black", sans-serif;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.6s;
+	padding: 40px 100px;
+	z-index: 100000;
+}
+
+/* .sticky syncron dengan JS */
+
+nav.sticky {
+	padding: 5px 100px;
+	background: white;
+}
+
+nav .logo {
+	position: relative;
+	font-weight: 700;
+	color: white;
+	font-size: 2em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: 0.6s;
+	text-decoration: none;
+}
+
+nav ul {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+nav ul li {
+	position: relative;
+	list-style: none;
+}
+
+nav ul li a {
+	position: relative;
+	margin: 0 15px;
+	text-decoration: none;
+	color: white;
+	letter-spacing: 2px;
+	font-weight: 700px;
+	transition: 0.6s;
+	cursor: pointer;
+}
+
+nav.sticky .logo,
+nav.sticky ul li a {
+	color: black;
+}
+
+/* Akhir nav fari line 13 - 20 */
+
+/* Section Banner */
+
+.banner {
+	position: relative;
+	width: 100%;
+	height: 11.9vh;
+	/* background: url(bg.jpg); 
+	background-size: cover; */
+}
+
+/* Section Banner */
+
+/* Main */
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#prof {
+	padding: 2.5vh;
+	display: grid;
+	place-items: center;
+	text-align: center;
+	background-color: var(--01);
+	width: 80vh;
+}
+
+#quote {
+	padding: 2.5vh;
+	display: grid;
+	place-items: center;
+	text-align: center;
+	background-color: var(--02);
+	width: 80vh;
+}
+
+#skills {
+	font-family: "Archivo Black", sans-serif;
+	padding: 2.5vh;
+	display: grid;
+	place-items: center;
+	text-align: center;
+	background-color: var(--03);
+	width: 80vh;
+}
+
+#skills article ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#skills article ul li {
+	list-style: none;
+}
+
+#project {
+	padding: 2.5vh;
+	display: grid;
+	place-items: center;
+	text-align: center;
+	width: 80vh;
+	background-color: var(--04);
+}

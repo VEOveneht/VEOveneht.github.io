@@ -9,34 +9,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Lisan Shidqi Farizan</title>
 </head>
 
 <body>
+    <!-- Navigation for Contact Me -->
+    <nav role="navigation">
+        <a href="#" class="logo"><img src="" alt="" />Lisan</a>
+        <ul>
+            <li><a>Profile</a></li>
+            <li><a>Contact</a></li>
+        </ul>
+    </nav>
+    <section class="banner"></section>
+
     <main>
-        <!-- Navigation for Contact Me -->
-        <nav role="navigation">
-            <a href="#" class="logo"><img src="" alt="" />Lisan</a>
-            <ul>
-                <li><a>Profile</a></li>
-                <li><a>Contact</a></li>
-            </ul>
-        </nav>
-        <section class="banner"></section>
         <!-- This Section is for My Top Profile -->
         <section id="profile-top">
             <div class="container">
                 <div id="prof">
-                    <h1>Front-end Developer</h1>
-                    <article style="padding: 0.5vh;">
-                        <p>
-                            Coding beautifully brings me joy, and I'm passionate about what I do.
-                        </p>
-                    </article>
+                    <div>
+                        <h1 style="	padding: 0.5vh;">LISAN SHIDQI FARIZAN</h1>
+                        <article style="padding: 0.5vh;">
+                            <p>
+                                Coding beautifully brings me joy, and I'm passionate about what I do.
+                            </p>
+                        </article>
+                    </div>
                     <figure>
-                        <img src="assets/img/maskot.png " style="width: 180px; border-radius: 100px; box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;" />
+                        <img alt="Lisan Shidqi Farizan" src="assets/img/maskot.png " style="width: 180px; filter: drop-shadow(5px 0px 1px #000000); border: #ffae17 solid 2px; border-radius: 20px;" />
                     </figure>
-                    <h1 style="	padding: 0.5vh;">LISAN SHIDQI FARIZAN</h1>
                 </div>
             </div>
         </section>
@@ -47,40 +50,45 @@
                     <article>
                         <h1>Hi, I'm Lisan. Nice to meet you.</h1>
                         <p>
-                            Coding is my passion, and creating websites that are not only functional but also present an appealing aesthetic is my commitment. My dedication to each project is reflected in the effort to create a stunning look.
+                            Backend Developer || Game Developer <br> Coding is my passion, make a character that are not only functional but also present an appealing aesthetic is my commitment. My dedication to each project is reflected in the effort
+                            to create a stunning look.
                         </p>
                     </article>
+                    <h3>About Me</h3>
+                    <p>
+                        Sometimes, I enjoy writing code locally, building a foundation to come up with a unique solution. I enjoy the process of bringing ideas to life, developing concepts into stunning displays that function perfectly.
+                    </p>
+
                 </div>
             </div>
         </section>
         <!-- It's for MySkills -->
         <section id="profile-skills">
             <div class="container">
+                <h3>Language I use:</h3>
                 <div id="skills">
                     <article>
-                        <h3>Frontend Developer and Game Develover</h3>
-                        <p>
-                            Sometimes, I enjoy writing code from scratch, building a foundation from scratch to come up with a unique solution. I enjoy the process of bringing ideas to life in the browser, developing concepts into stunning displays that function perfectly.
-                        </p>
-                        <h3>Language I use:</h3>
-                        <ul>
-                            <li>HTML5</li>
-                            <li>, CSS</li>
-                            <li>, JavaScript</li>
-                            <li>, MongoDB</li>
-                            <li>, Express</li>
-                            <li>, React</li>
-                            <li>, Node</li>
+                        <ul class="skills">
+                            <li><img class="logoStyle" alt="HTML5" src="assets/img/HTML5.png" /></li>
+                            <li><img class="logoStyle" alt="CSS3" src="assets/img/CSS3.png" /></li>
+                            <li><img class="logoStyle" alt="JavaScript" src="assets/img/JavaScript.png" /></li>
+                            <li><img class="logoStyle" alt="ReactJS" src="assets/img/React.png" /></li>
+                            <li><img class="logoStyle" alt="ExpressJS" src="assets/img/ExpressJS.png" /></li>
+                            <li><img class="logoStyle" alt="NodeJS" src="assets/img/NodeJS.png" /></li>
+                            <li><img class="logoStyle" alt="MongoDB" src="assets/img/MongoDB.png" /></li>
                         </ul>
                         <h3>Dev Tools:</h3>
-                        <ul>
-                            <li>Github</li>
-                            <li>Unity</li>
+                        <ul class="tools">
+                            <li><img class="logoStyle" alt="Visual Studio Code" src="assets/img/VSC.png"></li>
+                            <li><img class="logoStyle" alt="Unity" src="assets/img/Unity.png"></li>
+                            <li><img class="logoStyle" alt="Blender" src="assets/img/"></li>
+                            <li><img class="logoStyle" alt="Git" src="assets/img/git"></li>
+                            <li><img class="logoStyle" alt="Adobe Illustrator" src="assets/img/Ai.ico"></li>
                         </ul>
                     </article>
                 </div>
-
             </div>
+        </section>
         </section>
         <!-- My Recent Works, so Many but IDK What Should i Show Here -->
         <section class="recent-work"></section>
@@ -118,11 +126,7 @@
         <div>Social Media</div>
         <div>Handcraftted by me &copy;2023</div>
     </footer>
-    <script type="text/javascript">
-        window.addEventListener("scroll", function() {
-            const nav = document.querySelector("nav");
-            nav.classList.toggle("sticky", window.scrollY > 0);
-        })
+    <script src="assets/js/index.js">
     </script>
 </body>
 
