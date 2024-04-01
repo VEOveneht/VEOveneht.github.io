@@ -10,7 +10,7 @@
 - Sebut saja VEO
 - Usia 20 Tahun
 - Saya masih sangat pemula
-- Bukan wibu (gk percaya sih ;v)
+- Bukan wibu
 </p>
 
 ---
