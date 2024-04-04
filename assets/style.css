@@ -21,6 +21,7 @@ body {
 	text-align: center;
 	color: var(--06);
 	font-family: "Kanit", sans-serif;
+	margin: 10px;
 }
 
 /* Awal nav line 13 - 20 */
@@ -87,6 +88,10 @@ nav ul li:first-child {
 	margin-right: auto;
 }
 
+li {
+	list-style-type: none;
+}
+
 /* Akhir nav dari line 13 - 20 */
 
 /* Section Banner */
@@ -103,7 +108,6 @@ nav ul li:first-child {
 
 .container {
 	border-bottom: #ffae17 solid 1px;
-	padding: 15px;
 }
 
 #prof {
@@ -113,18 +117,21 @@ nav ul li:first-child {
 	align-items: center;
 }
 
-.skills,
-.tools {
+#quotes {
+	font-family: "Archivo Black", sans-serif;
+}
+
+.skills div,
+.tools div {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	list-style-type: none;
-	padding: 5px;
+	margin: 10px;
 }
 
 .logoStyle {
 	width: 50px;
-	padding: 5px;
+	margin: 2.5px;
 }
 
 /* Awal Footer */
@@ -149,23 +156,25 @@ nav.sticky ul li:hover {
 @media only screen and (max-width: 600px) {
 	nav {
 		width: 95%;
-		padding: 20px;
+		padding: 15px;
+		height: 5vh;
 	}
 	nav.sticky {
 		width: 100%;
-		padding: 5px;
+		padding: 10px;
 	}
 	nav .logo {
 		font-size: 1.5em;
 	}
-	nav ul li {
-		padding: 5px;
-	}
 	nav ul li:first-child {
 		margin-right: 0;
 	}
-	.content {
-		padding-top: 60px;
+	.banner {
+		width: 100%;
+		height: 10vh;
+	}
+	#prof {
+		display: block;
 	}
 }
 
@@ -173,7 +182,7 @@ nav.sticky ul li:hover {
 
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
 	nav {
-		width: 95%;
+		width: 90%;
 		padding: 30px;
 	}
 	nav.sticky {
