@@ -99,7 +99,7 @@ li {
 .banner {
 	position: relative;
 	width: 100%;
-	height: 11.9vh;
+	height: 12vh;
 	/* background: url(bg.jpg); 
 	background-size: cover; */
 }
@@ -108,6 +108,7 @@ li {
 
 .container {
 	border-bottom: #ffae17 solid 1px;
+	padding: 10px;
 }
 
 #prof {
@@ -154,9 +155,12 @@ nav.sticky ul li:hover {
 }
 
 @media only screen and (max-width: 600px) {
+	body {
+		font-size: small;
+	}
 	nav {
 		width: 95%;
-		padding: 15px;
+		padding: 20px;
 		height: 5vh;
 	}
 	nav.sticky {
@@ -169,10 +173,6 @@ nav.sticky ul li:hover {
 	nav ul li:first-child {
 		margin-right: 0;
 	}
-	.banner {
-		width: 100%;
-		height: 10vh;
-	}
 	#prof {
 		display: block;
 	}
@@ -181,9 +181,12 @@ nav.sticky ul li:hover {
 /* Tablet */
 
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
+	body {
+		font-size: medium;
+	}
 	nav {
 		width: 90%;
-		padding: 30px;
+		padding: 30px 50px;
 	}
 	nav.sticky {
 		width: 100%;
