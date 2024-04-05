@@ -126,7 +126,6 @@ nav.sticky ul li {
 }
 
 #prof {
-    font-family: "Archivo Black", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,10 +133,6 @@ nav.sticky ul li {
 
 #prof div {
     margin: 10px;
-}
-
-#quotes {
-    font-family: "Archivo Black", sans-serif;
 }
 
 #quotes article div {
