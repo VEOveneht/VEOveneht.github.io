@@ -65,6 +65,7 @@ nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 10px;
 }
 
 nav ul li {
@@ -178,6 +179,9 @@ nav.sticky ul li:hover {
     nav.sticky {
         width: 100%;
         padding: 10px;
+    }
+    nav ul li {
+        margin: 5px;
     }
     nav .logo {
         font-size: 1.5em;
