@@ -1,256 +1,308 @@
 :root {
-    --01: #1d34f5;
-    --02: #931df5;
-    --03: #4c1ef5;
-    --04: #1d78f5;
-    --05: #d91df5;
-    --06: #ffae17;
-    --07: #2f2f2f;
+	--01: #1d34f5;
+	--02: #931df5;
+	--03: #4c1ef5;
+	--04: #1d78f5;
+	--05: #d91df5;
+	--06: #ffae17;
+	--07: #2f2f2f;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    /* font-family: "Archivo Black", sans-serif;
+	margin: 0;
+	padding: 0;
+	/* font-family: "Archivo Black", sans-serif;
 	font-weight: 400;
 	font-style: normal; */
 }
 
 body {
-    background-color: var(--07);
-    text-align: center;
-    color: var(--06);
-    font-family: "Kanit", sans-serif;
-    margin: 10px;
-    letter-spacing: 1px;
+	background-color: var(--07);
+	text-align: center;
+	color: var(--06);
+	font-family: "Kanit", sans-serif;
+	margin: 10px;
+	letter-spacing: 1px;
+	font-size: medium;
 }
-
 
 /* Awal nav line 13 - 20 */
 
 nav {
-    font-family: "Archivo Black", sans-serif;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: 0.3s;
-    padding: 40px 100px;
-    z-index: 100000;
+	font-family: "Archivo Black", sans-serif;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.3s;
+	z-index: 100000;
+	width: 95%;
+	padding: 20px;
+	height: 5vh;
 }
-
 
 /* .sticky syncron dengan JS */
 
 nav.sticky {
-    padding: 5px 100px;
-    background: var(--06);
+	background: var(--06);
+	width: 100%;
+	padding: 10px;
 }
 
 nav .logo {
-    position: relative;
-    font-weight: 700;
-    color: var(--06);
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: 0.3s;
-    text-decoration: none;
+	position: relative;
+	font-weight: 700;
+	color: var(--06);
+	font-size: 1.5em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: 0.3s;
+	text-decoration: none;
 }
 
 nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
 }
 
 nav ul li {
-    padding: 10px;
-    margin: 10px;
-    cursor: pointer;
-    border-radius: 5px;
+	padding: 10px;
+	margin: 5px;
+	cursor: pointer;
+	border-radius: 5px;
 }
 
 li {
-    list-style-type: none;
+	list-style-type: none;
 }
 
 a {
-    display: flex;
-    align-content: center;
+	display: flex;
+	align-content: center;
 }
 
 nav.sticky .logo,
 nav.sticky ul li {
-    color: var(--07);
+	color: var(--07);
 }
 
-
 /* Akhir nav dari line 13 - 20 */
-
 
 /* Section Banner */
 
 .banner {
-    position: relative;
-    width: 100%;
-    height: 15vh;
-    /* background: url(bg.jpg); 
+	position: relative;
+	width: 100%;
+	height: 10vh;
+	/* background: url(bg.jpg); 
 	background-size: cover; */
 }
-
 
 /* Section Banner */
 
 .container {
-    border-bottom: #ffae17 solid 1px;
-    padding: 10px;
+	border-bottom: #ffae17 solid 1px;
+	padding: 10px;
 }
 
 #skills article,
 #quotes article {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	display: block;
+	margin: 5px;
+}
+
+#quotes article div,
+#skills article div {
+	width: 326;
 }
 
 .skills div,
 .tools div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
 }
 
 #prof {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	display: block;
 }
 
 #prof div {
-    margin: 10px;
-}
-
-#quotes article div {
-    margin: 10px;
-    text-align: center;
+	margin: 10px;
 }
 
 .logoStyle {
-    width: 50px;
-    margin: 2.5px;
+	width: 40px;
+	margin: 2.5px;
 }
 
+#project ul {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.card-project {
+	text-align: center;
+	background-color: green;
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+}
 
 /* Awal Footer */
 
 footer {
-    bottom: 0;
+	bottom: 0;
 }
-
 
 /* Akhir Footer */
 
 nav ul li:hover {
-    transition: ease-in-out 0.3s;
-    background-color: var(--06);
-    color: #2f2f2f;
+	transition: ease-in-out 0.3s;
+	background-color: var(--06);
+	color: #2f2f2f;
 }
 
 nav.sticky ul li:hover {
-    background-color: var(--07);
-    color: var(--06);
+	background-color: var(--07);
+	color: var(--06);
 }
-
-@media only screen and (max-width: 600px) {
-    body {
-        font-size: small;
-    }
-    nav {
-        width: 95%;
-        padding: 20px;
-        height: 5vh;
-    }
-    nav.sticky {
-        width: 100%;
-        padding: 10px;
-    }
-    nav ul li {
-        margin: 5px;
-    }
-    nav .logo {
-        font-size: 1.5em;
-    }
-    .banner {
-        height: 10vh;
-    }
-    #prof {
-        display: block;
-    }
-    #skills article {
-        display: block;
-    }
-    #quotes article {
-        display: block;
-    }
-    .logoStyle {
-        width: 30px;
-        margin: 2.5px;
-    }
-}
-
 
 /* Tablet */
 
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
-    body {
-        font-size: medium;
-    }
-    nav {
-        width: 90%;
-        padding: 30px 50px;
-    }
-    nav.sticky {
-        width: 98%;
-        padding: 8px;
-    }
-    nav .logo {
-        font-size: 1.8em;
-    }
+	nav {
+		width: 90%;
+		padding: 30px 50px;
+	}
+	nav.sticky {
+		width: 98%;
+		padding: 8px;
+	}
+	nav .logo {
+		font-size: 1.8em;
+	}
+	#prof {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0px 0px 0px 0px;
+	}
+	#prof div {
+		width: 400px;
+	}
+	#quotes article,
+	#skills article {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	#quotes article div,
+	#skills article div {
+		width: 250px;
+	}
+	.logoStyle {
+		width: 50px;
+	}
+	#project ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
 }
-
 
 /* Desktop */
 
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
-    nav {
-        width: 90%;
-        padding: 30px 100px;
-    }
-    nav.sticky {
-        width: 90%;
-        padding: 8px 100px;
-    }
-    nav .logo {
-        font-size: 2em;
-    }
+	body {
+		font-size: large;
+		margin: 20px;
+	}
+	nav {
+		width: 90%;
+		padding: 30px 100px;
+	}
+	nav.sticky {
+		width: 90%;
+		padding: 8px 100px;
+	}
+	nav .logo {
+		font-size: 2em;
+	}
+	#prof {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#prof div {
+		width: 500px;
+		margin: 10px;
+	}
+	#quotes article,
+	#skills article {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	#quotes article div,
+	#skills article div {
+		width: 400px;
+	}
+	.logoStyle {
+		width: 50px;
+		margin: 2.5px;
+	}
+	#project ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+	}
 }
 
 @media only screen and (min-width: 1441px) {
-    nav {
-        width: 92%;
-        padding: 30px 100px;
-    }
-    nav.sticky {
-        width: 92%;
-        padding: 8px 100px;
-    }
-    nav .logo {
-        font-size: 2em;
-    }
+	body {
+		font-size: large;
+	}
+	nav {
+		width: 92%;
+		padding: 30px 100px;
+	}
+	nav.sticky {
+		width: 92%;
+		padding: 8px 100px;
+	}
+	nav .logo {
+		font-size: 2em;
+	}
+	#prof {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0px 0px 0px 0px;
+	}
+	#quotes article,
+	#skills article {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	#quotes article div,
+	#skills article div {
+		width: 500px;
+	}
+	#project ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+	}
 }
