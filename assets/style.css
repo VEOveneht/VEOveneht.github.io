@@ -90,6 +90,10 @@ nav ul li a:hover {
 	align-items: center;
 }
 
+ul {
+	padding: 0;
+}
+
 li {
 	list-style-type: none;
 }
