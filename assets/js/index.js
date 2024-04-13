@@ -1,4 +1,6 @@
 const main = document.querySelector("main");
+const nav = document.querySelector("nav");
+const scrollup = document.querySelector("#scrollup");
 const home = document.querySelector(".home");
 const contact = document.querySelector(".contact");
 const skills = document.querySelector(".skills");
@@ -54,6 +56,10 @@ cv.addEventListener("mouseleave", () => {
 	home.style.color = "#ffae17";
 	contact.style.color = "#ffae17";
 	skills.style.color = "#ffae17";
+});
+
+scrollup.addEventListener("click", () => {
+	nav.scrollIntoView({ behavior: "smooth" });
 });
 
 function showbar() {

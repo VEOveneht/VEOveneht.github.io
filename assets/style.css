@@ -42,18 +42,18 @@ nav .nav {
 }
 
 nav ul.sidebar {
-	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.822);
 	position: fixed;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	padding: 0;
-	width: 0;
+	width: 0%;
 	top: 0px;
 	left: 0px;
 	height: 100%;
 	overflow-x: hidden;
-	transition: ease-in-out 0.3ss;
+	transition: ease-in-out 0.3s;
 }
 
 nav a.menu,
@@ -83,16 +83,33 @@ nav ul li a:hover {
 	font-size: 1.2rem;
 }
 
-#project ul {
+#scrollup {
+	position: fixed;
+	display: center;
+	align-items: center;
+	justify-content: center;
+	bottom: 2vh;
+	right: 2vh;
+	background-color: var(--03);
+	padding: 10px;
+	border-radius: 10px;
+}
+
+#project article ul {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 }
 
-ul {
-	padding: 0;
+h1,
+h2,
+h3,
+ul,
+p {
 	margin: 0;
+	padding: 0;
 }
 
 li {
@@ -101,10 +118,12 @@ li {
 
 .container {
 	padding: 10px;
+	align-items: center;
 }
 
 #skills article,
-#quotes article {
+#quotes article,
+#project article {
 	display: flex;
 	justify-content: center;
 	align-items: center;
