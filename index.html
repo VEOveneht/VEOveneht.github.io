@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="assets/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Lisan Shidqi Farizan</title>
@@ -20,23 +21,42 @@
     <header>
         <nav role="navigation">
             <a class="logo">LISAN</a>
-            <ul>
+            <ul class="nav">
                 <li>
-                    <a id="home" href="">| HOME</a>
+                    <a class="home" href="">| HOME</a>
                 </li>
                 <li>
-                    <a id="contact" href="">| CONTACT</a>
+                    <a class="skills" href="#skills">| SKILLS</a>
                 </li>
                 <li>
-                    <a id="skills" href="">| SKILLS</a>
+                    <a class="contact" href="#contact">| CONTACT</a>
                 </li>
                 <li>
-                    <a id="cv" href="">| CV</a>
+                    <a class="cv" href="">| CV</a>
                 </li>
+            </ul>
+            <a class="menu" onclick="showbar()"><span class="material-symbols-outlined">
+                menu
+                </span></a>
+            <ul class="sidebar">
+                <li>
+                    <a class="home" href="">| HOME</a>
+                </li>
+                <li>
+                    <a class="skills" href="#skills" onclick="hidebar()">| SKILLS</a>
+                </li>
+                <li>
+                    <a class="contact" href="#contact" onclick="hidebar()">| CONTACT</a>
+                </li>
+                <li>
+                    <a class="cv" href="">| CV</a>
+                </li>
+                <a class="close" onclick="hidebar()"><span class="material-symbols-outlined">
+                    close
+                    </span></a>
             </ul>
         </nav>
     </header>
-
 
     <main>
         <!-- This Section is for My Top Profile -->
@@ -44,11 +64,11 @@
             <div class="container">
                 <div id="prof">
                     <figure>
-                        <img alt="Lisan Shidqi Farizan" src="assets/img/maskot.png " style="width: 180px; filter: drop-shadow(5px 0px 1px #000000); border: #ffae17 solid 2px; border-radius: 20px;" />
+                        <img alt="Lisan Shidqi Farizan" src="assets/img/maskot.png " style="width: 180px;  border: #ffae17 solid 2px; border-radius: 20px;" />
                     </figure>
                     <div>
                         <h1 style="	padding: 0.5vh;">LISAN SHIDQI FARIZAN</h1>
-                        <h3>FrontEnd Developer</h3>
+                        <h2>FrontEnd Developer</h2>
                         <article style="padding: 0.5vh;">
                             <p>
 
@@ -65,14 +85,13 @@
                     <h2>Hi, I'm Lisan. Nice to meet you.</h2>
                     <article>
                         <div>
-
                             <br>
                             <p> Coding is my passion, make a character that are not only functional but also present an appealing aesthetic is my commitment. My dedication to each project is reflected in the effort to create a stunning look.
                             </p>
                         </div>
                         <div>
                             <br>
-                            <h3>About Me</h3>
+                            <h2>About Me</h2>
                             <br>
                             <p>
                                 Sometimes, I enjoy writing code locally, building a foundation to come up with a unique solution. I enjoy the process of bringing ideas to life, developing concepts into stunning displays that function perfectly.
@@ -88,7 +107,7 @@
                 <div id="skills">
                     <article>
                         <ul class="skills">
-                            <h3>Language I use:</h3>
+                            <h2>Language I use:</h2>
                             <div>
                                 <li><img class="logoStyle" alt="HTML5" src="assets/img/HTML5.png" /></li>
                                 <li><img class="logoStyle" alt="CSS3" src="assets/img/CSS3.png" /></li>
@@ -101,9 +120,10 @@
                                 <li><img class="logoStyle" alt="NodeJS" src="assets/img/NodeJS.png" /></li>
                                 <li><img class="logoStyle" alt="MongoDB" src="assets/img/MongoDB.png" /></li>
                             </div>
+                            <br>
                         </ul>
                         <ul class="tools">
-                            <h3>Dev Tools:</h3>
+                            <h2>Dev Tools:</h2>
                             <div>
                                 <li><img class="logoStyle" alt="Visual Studio Code" src="assets/img/VSC.png"></li>
                                 <li><img class="logoStyle" alt="Unity" src="assets/img/Unity.png"></li>
@@ -126,7 +146,7 @@
             <div class="container">
                 <div id="project">
                     <article>
-                        <h3>My Projects</h3>
+                        <h2>My Projects</h2>
                         <p>
                             I am a lover of digital products. I have used many applications and web. curiosity about how the web, apps and games work. Ultimately, I want to try making my own.
                         </p>
@@ -153,7 +173,7 @@
         <!-- Staring Project With Us? -->
         <section class="working-together">
             <div class="container">
-                <div>
+                <div id="contact">
                     <div>
                         <p>Interested in working together? I’ll buy the coffee.</p>
                     </div>
