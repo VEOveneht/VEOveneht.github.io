@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root {
     --01: #bfc5d9;
     --02: #163e8c;
@@ -169,4 +170,177 @@ li {
     }
 }
 
+=======
+:root {
+    --01: #bfc5d9;
+    --02: #163e8c;
+    --03: #215ba6;
+    --04: #194073;
+    --05: #4d5d73;
+    --06: #fcfcfc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "kanit", serif;
+}
+
+body {
+    background-color: var(--06);
+    color: black;
+}
+
+.banner {
+    width: 100%;
+    height: 8vh;
+}
+
+.scrollup {
+    background-color: var(--03);
+    padding: 2vh;
+    position: fixed;
+    bottom: 5vh;
+    right: 5vh;
+    cursor: pointer;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 8vh;
+    background-color: var(--01);
+    transition: ease-in-out 0.5s;
+}
+
+.sidebar {
+    width: 0%;
+    height: 100vh;
+    background-color: var(--06);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: ease-in-out 0.5s;
+}
+
+.sidebar p {
+    margin: 0vh 0vh 0vh 2vh;
+    border-radius: 1px;
+    height: 8vh;
+    font-size: 2em;
+    font-weight: bold;
+    align-content: center;
+    text-align: center;
+}
+
+.sidebar ul {
+    border-top: solid black;
+    display: block;
+    margin: 0vh 2vh 0vh 2vh;
+}
+
+.sidebar ul li {
+    padding: 2vh;
+}
+
+nav {
+    width: 100%;
+    height: 8vh;
+    background-color: var(--06);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    transition: ease-in-out 0.5s;
+    border-bottom: solid black;
+    border-radius: 2px solid;
+}
+
+#menu,
+#close {
+    display: flex;
+    align-items: center;
+    padding: 1vh;
+    margin: 1vh;
+    cursor: pointer;
+}
+
+#close {
+    position: absolute;
+    top: 2px;
+    right: 0;
+}
+
+.logo {
+    margin: 0vh auto 0vh 2vh;
+    font-size: 2em;
+    font-weight: bold;
+    transition: ease-in-out 0.5s;
+}
+
+nav ul {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0vh 2vh 0vh 0vh;
+    transition: ease-in-out 0.5s;
+}
+
+nav ul li a {
+    text-decoration: none;
+    transition: ease-in-out 0.3s;
+    padding: 8px;
+    margin: 5px;
+    cursor: pointer;
+    color: black;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container {
+    margin: 0vh 3vh 0vh 3vh;
+}
+
+.wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile_top,
+#about_me,
+#tugas_kuliah {
+    text-align: center;
+    margin: 15px 0px 15px 0px;
+}
+
+#tugas_kuliah ul {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.logoStyle {
+    width: 7vh;
+    margin: 5px;
+}
+
+#blink {
+    animation: blink 0.5s step-end infinite alternate;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+>>>>>>> 55b997c4594f1e8aa69eaed658823118a8310cb5
 @media screen and (min-width: 601px) and (max-width: 768px) {}
