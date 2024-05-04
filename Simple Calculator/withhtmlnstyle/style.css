@@ -45,15 +45,14 @@ div {
     background-color: antiquewhite;
     text-align: center;
     padding: 0.5vh;
-    border: solid 0.1px black;
-    border-radius: 5px;
+    border: solid 1px black;
 }
 
 #btn {
     padding: 1vh;
     background-color: antiquewhite;
-    border: solid 1px black;
     border-radius: 5px;
+    border: solid 1px black;
     cursor: pointer;
 }
 
