@@ -94,7 +94,6 @@ nav {
 #menu,
 #close {
     display: flex;
-    align-items: center;
     padding: 1vh;
     margin: 1vh;
     cursor: pointer;

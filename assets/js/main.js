@@ -14,8 +14,7 @@ function showSide() {
 
 function hideSide() {
     sidebar.style.width = "0%";
-    menu.style.display = "block"
-
+    menu.style.display = "flex"
 }
 window.onscroll = function () {
     scroll();
