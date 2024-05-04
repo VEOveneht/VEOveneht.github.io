@@ -8,7 +8,7 @@ const sidebar = document.querySelector(".sidebar");
 const sticky = nav.offsetTop;
 
 function showSide() {
-    sidebar.style.width = "100%";
+    sidebar.style.width = "70%";
     menu.style.display = "none"
 }
 
@@ -25,10 +25,12 @@ function scroll() {
         nav.classList.add("sticky");
         banner.style.height = "8vh";
         mepng.style.filter = "none";
+        autoscroll.style.opacity = "80%";
     } else {
         nav.classList.remove("sticky");
         banner.style.height = "0vh";
         mepng.style.filter = "drop-shadow(4px 4px 4px black)"
+        autoscroll.style.opacity = "0%";
     }
 }
 

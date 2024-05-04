@@ -26,6 +26,8 @@ body {
     cursor: pointer;
     border-radius: 50px;
     background-color: var(--01);
+    opacity: 0%;
+    transition: 0.3s;
 }
 
 
@@ -166,22 +168,30 @@ li {
     align-items: center;
 }
 
-#profile_top,
-#about_me,
-#fake_project {
+#profile_top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
     text-align: center;
-    margin: 15px 0px 15px 0px;
 }
 
 #profile_top #mepng {
     width: 25vh;
     filter: drop-shadow(4px 4px 4px black);
-    margin: 15px;
+    margin: 2vh 0vh 0vh 0vh;
+}
+
+#about_me,
+#fake_project {
+    margin: 15px 0px 15px 0px;
+    text-align: center;
 }
 
 #fake_project div {
     display: flex;
     flex-direction: column;
+    align-content: center;
 }
 
 #fake_project div a {
@@ -190,7 +200,6 @@ li {
     border: solid 1px black;
     border-radius: 10px;
     margin: 2vh;
-    align-content: center;
 }
 
 
@@ -200,7 +209,29 @@ li {
 /* *Footer */
 
 footer {
+    display: flex;
+    height: 10vh;
+    background-color: #202020;
     text-align: center;
+}
+
+footer div.wrap ul {
+    display: flex;
+    align-content: center;
+    gap: 2vh;
+    margin: 1vh;
+}
+
+footer div.wrap ul li a,
+footer div.wrap p a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: small;
+}
+
+footer div.wrap ul li a:hover {
+    color: #3179d8;
 }
 
 
