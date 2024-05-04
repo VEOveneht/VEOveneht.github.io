@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Jersey+25&display=swap">
+    <title>Simple Calculator</title>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Simple Calculator</h1>
+        <div id="wrap">
+            <div>
+                <input class="input" type="number" id="input1"></input>
+                <input class="input" type="number" id="input2"></input>
+            </div>
+            <div>
+                <label for="option">Option:</label>
+                <select name="option" id="operations">
+                    <option class="option" value="add">+</option>
+                    <option class="option" value="minus">-</option>
+                    <option class="option" value="times">*</option>
+                    <option class="option" value="divided">/</option>
+                </select>
+            </div>
+            <div>
+                <button id="btn" type="submit" onclick="calculateor()">SUBMIT</button>
+            </div>
+            <div>Results:
+                <a id="output"></a>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
