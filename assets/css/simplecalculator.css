@@ -40,22 +40,17 @@ div {
     flex-direction: column;
 }
 
-.input,
-#operations {
+.input {
     background-color: antiquewhite;
     text-align: center;
     padding: 0.5vh;
-    border: solid 1px black;
+    border-radius: 8px;
 }
 
+#operations,
 #btn {
     padding: 1vh;
     background-color: antiquewhite;
-    border-radius: 5px;
-    border: solid 1px black;
+    border-radius: 8px;
     cursor: pointer;
-}
-
-#btn:hover {
-    background-color: rgb(252, 227, 194);
 }

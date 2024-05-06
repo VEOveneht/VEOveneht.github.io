@@ -3,7 +3,7 @@ const input2 = document.querySelector("#input2");
 const output = document.querySelector("#output");
 
 
-function calculateor() {
+function calculator() {
     let options = document.getElementById("operations").value;
     let total;
 

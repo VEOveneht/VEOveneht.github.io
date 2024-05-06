@@ -7,20 +7,22 @@ const mepng = document.querySelector("#mepng");
 const sidebar = document.querySelector(".sidebar");
 const sticky = nav.offsetTop;
 
-function showSide() {
-    sidebar.style.width = "70%";
+
+
+const showSide = () => {
+    sidebar.style.width = "100%";
     menu.style.display = "none"
 }
 
-function hideSide() {
+const hideSide = () => {
     sidebar.style.width = "0%";
     menu.style.display = "flex"
 }
-window.onscroll = function () {
+window.onscroll = () => {
     scroll();
 };
 
-function scroll() {
+const scroll = () => {
     if (window.pageYOffset > sticky) {
         nav.classList.add("sticky");
         banner.style.height = "8vh";
