@@ -207,6 +207,18 @@ div.card p a {
     color: black;
     padding: 1vh;
     margin: 0vh 0vh 1vh 0vh;
+    border-radius: 10px;
+}
+
+div.card img:hover {
+    transform: scale(1.5);
+    transition: .3s ease-in-out;
+}
+
+div.card p a:hover {
+    background-color: var(--02);
+    color: white;
+    transition: .3s;
 }
 
 
