@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/VEOveneht.github.io/static/css/main.e89e548a.css",
+    "main.js": "/VEOveneht.github.io/static/js/main.02462e81.js",
+    "static/js/453.171ddc7f.chunk.js": "/VEOveneht.github.io/static/js/453.171ddc7f.chunk.js",
+    "index.html": "/VEOveneht.github.io/index.html",
+    "main.e89e548a.css.map": "/VEOveneht.github.io/static/css/main.e89e548a.css.map",
+    "main.02462e81.js.map": "/VEOveneht.github.io/static/js/main.02462e81.js.map",
+    "453.171ddc7f.chunk.js.map": "/VEOveneht.github.io/static/js/453.171ddc7f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e89e548a.css",
+    "static/js/main.02462e81.js"
+  ]
+}
