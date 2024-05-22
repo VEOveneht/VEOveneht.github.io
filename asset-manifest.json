@@ -1,21 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.8820988a.css",
-    "main.js": "/static/js/main.f6932d27.js",
+    "main.css": "/static/css/main.6822190f.css",
+    "main.js": "/static/js/main.cd9abbca.js",
     "static/js/453.171ddc7f.chunk.js": "/static/js/453.171ddc7f.chunk.js",
     "static/media/me.png": "/static/media/me.2dd8069409c0f9ef95c3.png",
     "static/media/sololearn_html.png": "/static/media/sololearn_html.b3e3f6a31519f88e504a.png",
     "static/media/CV.png": "/static/media/CV.0dfafa930817b8eb8596.png",
     "static/media/calc.png": "/static/media/calc.b27149dd552422901f2b.png",
     "index.html": "/index.html",
+    "static/media/instagram.svg": "/static/media/instagram.448198b22019bf2f0b71355b8346c675.svg",
+    "static/media/github.svg": "/static/media/github.a2dcecaacdba94077f71818776dd805b.svg",
+    "static/media/twitter-x.svg": "/static/media/twitter-x.59f61548d71b77b5144f030f0b705a72.svg",
     "static/media/menu.svg": "/static/media/menu.bf5afa18e5a3610447b30564453709f3.svg",
     "static/media/close.svg": "/static/media/close.55fac31e703ad0d262641ce2b6ee6f40.svg",
-    "main.8820988a.css.map": "/static/css/main.8820988a.css.map",
-    "main.f6932d27.js.map": "/static/js/main.f6932d27.js.map",
+    "main.6822190f.css.map": "/static/css/main.6822190f.css.map",
+    "main.cd9abbca.js.map": "/static/js/main.cd9abbca.js.map",
     "453.171ddc7f.chunk.js.map": "/static/js/453.171ddc7f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8820988a.css",
-    "static/js/main.f6932d27.js"
+    "static/css/main.6822190f.css",
+    "static/js/main.cd9abbca.js"
   ]
 }
