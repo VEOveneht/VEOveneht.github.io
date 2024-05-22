@@ -1,6 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+// ! CSS
+import '../assets/css/footer.css';
+
+
 const Footer = ()  => {
     return (
         <footer>
@@ -13,7 +17,7 @@ const Footer = ()  => {
                     <Link class="list_foot" to="/contact">CONTACT</Link>
                     <Link class="list_foot" to="/privacy-policy">PRIVACY POLICY</Link>
                 </div>
-                <p><a href>COPYRIGHT &copy; 2023 VEOveneht</a></p>
+                <p><a href>Made By Lisan Shidqi Farizan | &copy;2023 VEOveneht |</a></p>
             </div>
         </footer>
     )

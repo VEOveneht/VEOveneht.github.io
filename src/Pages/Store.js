@@ -7,7 +7,7 @@ const Store = () => {
     <>
     <Navigation />
     <main>
-    <h1>Store</h1>
+    <h1>RAYISAN Store</h1>
     </main>
     <Footer />
     </>)

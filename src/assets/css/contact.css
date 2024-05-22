@@ -1,0 +1,98 @@
+/* *Contact */
+main.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+div#contact {
+    width: 100%;
+    align-content: center;
+    min-width: 38vh;
+    max-width: 40vh;
+    background-color: #fff;
+    padding: 20px;
+    margin: 0vh 0vh 5vh 0vh;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea,
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #aaaaaa;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 10vh;
+    resize: vertical;
+}
+
+button {
+    cursor: pointer;
+    background-color: var(--03);
+    color: white;
+    border: none;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: var(--04);
+}
+
+div#sosmed {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0vh 0vh 5vh 0vh;
+}
+
+div#sosmed div {
+    display: flex;
+    gap: 2vh;
+}
+
+div#sosmed h1 {
+    margin: 0vh 0vh .7vh 0vh;
+}
+
+div#sosmed div button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1vh;
+    background-color: white;
+    border: var(--03) solid 1px;
+    color: var(--03);
+}
+
+div#sosmed div button:hover {
+    background-color: var(--03);
+    color: white;
+}
+
+div#sosmed div button img {
+    fill: currentColor;
+}
+
+
+
+/* *End Contact */

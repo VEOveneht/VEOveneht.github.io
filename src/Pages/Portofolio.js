@@ -6,6 +6,8 @@ import mepng from "../assets/img/me.png";
 import certHTML from "../assets/img/certificate/sololearn_html.png";
 import calc from "../assets/img/calc.png";
 
+// ! CSS
+
 const Portofolio = () => {
     const [isBanner, setIsBanner] = useState(false);
 

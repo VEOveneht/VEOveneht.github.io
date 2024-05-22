@@ -4,6 +4,9 @@ import CV from '../assets/img/CV.png'
 import Menu from '../assets/img/svg/menu.svg'
 import Close from '../assets/img/svg/close.svg'
 
+// ! CSS
+import '../assets/css/navbar.css';
+
 const Navigation = () => {
     const [isSidebarVisible, setSidebarVisible] = useState(false);
     const [isSticky, setIsSticky] = useState(false);
