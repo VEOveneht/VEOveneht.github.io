@@ -6,7 +6,9 @@ const Disclaimer = () => {
     return (
     <>
     <Navigation />
+    <main>
     <h1>Disclaimer</h1>
+    </main>
     <Footer />
     </>)
 }

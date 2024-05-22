@@ -6,13 +6,12 @@ const Footer = ()  => {
         <footer>
             <div>
                 <div className="foot_links">
-                    <Link class="list_nav" to="/">HOME</Link>
-                    <Link class="list_nav" to="/Blog">BLOG</Link>
-                    <Link class="list_nav" to="/Store">STORE</Link>
-                    <Link class="list_nav" to="/Disclaimer">DISCLAIMER</Link>
-                    <Link class="list_nav" to="/Contact">CONTACT</Link>
-                    <Link class="list_nav" to="/Sitemap">SITEMAP</Link>
-                    <Link class="list_nav" to="/Privacy_Policy">PRIVACY POLICY</Link>
+                    <Link class="list_foot" to="/">HOME</Link>
+                    <Link class="list_foot" to="/blog">BLOG</Link>
+                    <Link class="list_foot" to="/store">STORE</Link>
+                    <Link class="list_foot" to="/disclaimer">DISCLAIMER</Link>
+                    <Link class="list_foot" to="/contact">CONTACT</Link>
+                    <Link class="list_foot" to="/privacy-policy">PRIVACY POLICY</Link>
                 </div>
                 <p><a href>COPYRIGHT &copy; 2023 VEOveneht</a></p>
             </div>

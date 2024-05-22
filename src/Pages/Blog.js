@@ -6,7 +6,9 @@ const Blog = () => {
     return (
     <>
     <Navigation />
+    <main>
     <h1>Blog</h1>
+    </main>
     <Footer />
     </>)
 }

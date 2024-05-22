@@ -6,7 +6,9 @@ const About = () => {
     return (
     <>
     <Navigation />
+    <main>
     <h1>About</h1>
+    </main>
     <Footer />
     </>)
 }

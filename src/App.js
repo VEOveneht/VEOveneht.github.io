@@ -7,8 +7,8 @@ import About from './Pages/About';
 import Store from './Pages/Store';
 import Disclaimer from './Pages/Disclaimer';
 import Contact from './Pages/Contact';
-import Sitemap from './Pages/Sitemap';
 import PrivacyPolicy from './Pages/PrivacyPolicy';
+import Portofolio from './Pages/Portofolio';
 
 function App() {
   return (
@@ -16,13 +16,13 @@ function App() {
       <Router>
         <Routes>
           <Route path='/' element={<Home />}/>
-          <Route path='/Blog' element={<Blog />}/>
-          <Route path='/About' element={<About />}/>
-          <Route path='/Store' element={<Store />}/>
-          <Route path='/Disclaimer' element={<Disclaimer />}/>
-          <Route path='/Contact' element={<Contact />}/>
-          <Route path='/Sitemap' element={<Sitemap />}/>
-          <Route path='/Privacy_Policy' element={<PrivacyPolicy />} />
+          <Route path='/blog' element={<Blog />}/>
+          <Route path='/about' element={<About />}/>
+          <Route path='/store' element={<Store />}/>
+          <Route path='/portofolio' element={<Portofolio />}/>
+          <Route path='/disclaimer' element={<Disclaimer />}/>
+          <Route path='/contact' element={<Contact />}/>
+          <Route path='/privacy-policy' element={<PrivacyPolicy />} />
         </Routes>
       </Router>
     </div>
