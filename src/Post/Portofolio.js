@@ -4,12 +4,16 @@ import mepng from "../assets/img/me.png";
 import certHTML from "../assets/img/certificate/sololearn_html.png";
 import calc from "../assets/img/calc.png";
 
-// ! CSS
+
+import Navigation from "../Layout/Navigation";
+import Footer from "../Layout/Footer";
 
 const Portofolio = () => {
     
 
     return(
+    <>
+        <Navigation />
             <div className="container">
                 <div className="wrap">
                 <h1>MY PORTOFOLIO</h1>  
@@ -62,6 +66,8 @@ const Portofolio = () => {
                     </div>
                 </div>
             </div>
+        <Footer />
+    </>
     )
 }
 

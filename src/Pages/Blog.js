@@ -1,6 +1,6 @@
 import React from "react";
 import Navigation from "../Layout/Navigation";
-import Footer from "../components/Footer";
+import Footer from "../Layout/Footer";
 
 const Blog = () => {
     return (

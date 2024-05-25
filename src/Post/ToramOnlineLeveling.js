@@ -1,75 +1,78 @@
 import React from 'react';
 
+import Navigation from "../Layout/Navigation";
+import Footer from "../Layout/Footer";
+
+
 const Toram1 = () => {
     return(
     <>
-    <div className='banner' id='blog'></div>
-    
+    <Navigation />
     <div className="container">
         <div className="wrap">
-            <h3>Halo Petualang, selamat datang di blog saya.</h3>
-            <h3>Saya disini ingin membagikan tips singkat leveling di Game MMORPG TORAM ONLINE (level 1-250)</h3>
-            <p>Game ini menggabungkan dua hal favorit kamu dalam satu aktivitas permainan seru. Termasuk genre MMORPG,
+            <h2>Halo Petualang, selamat datang di blog saya.</h2>
+            <h2>Saya disini ingin membagikan tips singkat leveling di Game MMORPG TORAM ONLINE (level 1-255)</h2>
+            <br /><p>Game ini menggabungkan dua hal favorit kamu dalam satu aktivitas permainan seru. Termasuk genre MMORPG,
                 game bernama lengkap Toram Online – Departure from Iruna – sudah hadir untuk pengguna Android dan iOS
                 sejak 2015.
-            </p>
+            </p><br />
             <div>
                 <p><b>Level 1-21</b> = Lavarca (Dataran Rakau) 💩</p>
-                <p><br /><b>Level 21-46</b> = Dragonbayonewt (Makam Ratu: Area 1) 💩
+                <p><b>Level 21-46</b> = Dragonbayonewt (Makam Ratu: Area 1) 💩
                 </p>
-                <p><br /><b>Level 46-55</b> = Flare Volg Normal (Lereng Merapi: Jejak
+                <p><b>Level 46-55</b> = Flare Volg Normal (Lereng Merapi: Jejak
                     Lava) 👿</p>
-                <p><br /><b>Level 55-65</b> = Flare Volg Nightmare (Lereng Merapi: Jejak
+                <p><b>Level 55-65</b> = Flare Volg Nightmare (Lereng Merapi: Jejak
                     Lava) 👿</p>
-                <p><br /><b>Level 65-73</b> = Flare Volg Ultimate (Lereng Merapi: Jejak
+                <p><b>Level 65-73</b> = Flare Volg Ultimate (Lereng Merapi: Jejak
                     Lava) 👿</p>
-                <p><br /><b>Level 73-85</b> = Masked Warior Hard (Tanah Pertanian: Tanah
+                <p><b>Level 73-85</b> = Masked Warior Hard (Tanah Pertanian: Tanah
                     Tinggi) 👿</p>
-                <p><br /></p>
+                <p></p>
                 <p><b>Level 85-95</b> = Masked Warior Nightmare (Tanah Pertanian: Tanah
                     Tinggi) 👿</p>
-                <p><br /><b>Level 95-103</b> = Don Yeti (Lembah Es Polde) 👾</p>
-                <p><br /><b>Level 103-110</b> = Masked Warior Ulti (Tanah Pertanian: Tanah
+                <p><b>Level 95-103</b> = Don Yeti (Lembah Es Polde) 👾</p>
+                <p><b>Level 103-110</b> = Masked Warior Ulti (Tanah Pertanian: Tanah
                     Tinggi) 👿</p>
-                <p><br /></p>
+                <p></p>
                 <p><b>Level 110-114</b> = Cerberus Hard (Mata Air Kelahiran: Puncak) 👿
                 </p>
-                <p><br /><b>Level 114-120</b> = Cerberus Nightmare (Mata Air Kelahiran:
+                <p><b>Level 114-120</b> = Cerberus Nightmare (Mata Air Kelahiran:
                     Puncak) 👿</p>
-                <p><br /></p>
+                <p></p>
                 <p><b>Level 120-130</b> = Dukun Lapin (Sungai Kegelapan) 👾</p>
-                <p><br /><b>Level 130-140</b> = Cerberus Ultimate (Mata Air Kelahiran:
+                <p><b>Level 130-140</b> = Cerberus Ultimate (Mata Air Kelahiran:
                     Puncak) 👿</p>
-                <p><br /><b>Level 140-150</b> = Odelon Machina (Pabrik Demi Machina Besar: Area
+                <p><b>Level 140-150</b> = Odelon Machina (Pabrik Demi Machina Besar: Area
                     2) 👾</p>
-                <p><br /><b>Level 150-155</b> = Komandan Golem (Kediaman Lufenas: Pintu
+                <p><b>Level 150-155</b> = Komandan Golem (Kediaman Lufenas: Pintu
                     Masuk) 👾</p>
-                <p><br /><b>Level 155-165</b> = Venena Coenubia Hard (Istana Ultimea:
+                <p><b>Level 155-165</b> = Venena Coenubia Hard (Istana Ultimea:
                     Takhta) 👿</p>
-                <p><br /><b>Level 165-177</b> = Venena Coenubia Nigthmare (Istana Ultimea:
+                <p><b>Level 165-177</b> = Venena Coenubia Nigthmare (Istana Ultimea:
                     Takhta) 👿</p>
-                <p><br /><b>Level 177-180</b> = Altoblepas (Dataran Rokoko) 👾</p>
-                <p><br /><b>Level 180-183</b> = Carbuncle (Serambi Dewa Pembangunan) 👾
+                <p><b>Level 177-180</b> = Altoblepas (Dataran Rokoko) 👾</p>
+                <p><b>Level 180-183</b> = Carbuncle (Serambi Dewa Pembangunan) 👾
                 </p>
-                <p><br /><b>Level 183-198</b> = Venena Coenubia Ultimate (Istana Ultimea:
+                <p><b>Level 183-198</b> = Venena Coenubia Ultimate (Istana Ultimea:
                     Takhta) 👿</p>
-                <p><br /><b>Level 198-202</b> = Violangkara (Bongkahan Morthell: Area 3)
+                <p><b>Level 198-202</b> = Violangkara (Bongkahan Morthell: Area 3)
                     👾</p>
-                <p><br /><b>Level 202-210</b> = Venena Metacoenubia Hard (Neo Plastida)
+                <p><b>Level 202-210</b> = Venena Metacoenubia Hard (Neo Plastida)
                     👿</p>
-                <p><br /><b>Level 210-215</b> = Venena Metacoenubia Nightmare (Neo
+                <p><b>Level 210-215</b> = Venena Metacoenubia Nightmare (Neo
                     Plastida) 👿</p>
-                <p><br /><b>Level 215-220</b> = Nemopiranha (Distrik Rectecula : Area
+                <p><b>Level 215-220</b> = Nemopiranha (Distrik Rectecula : Area
                     1)&nbsp;👾</p>
-                <p><br /></p>
+                <p></p>
                 <p><b>Level 220-225</b> = (Gravicep - Ulti/Kuzto - Ulti) 😈 (Espectro) 👾</p>
-                <p><br /></p>
+                <p></p>
                 <p><b>Level 225-230</b> = (Gravicep - Ulti/Vulture - Ulti) 😈(Rhino/Espectro) 👾</p>
-                <p><br /></p>
+                <p></p>
                 <p><b>Level 230-245</b>&nbsp;= (Arachnidemon - Ulti/Venena Metacoenubia - Ulti/Vulture - Ulti) 😈</p>
-                <p><br /></p>
+                <p></p>
                 <p><b>Level 245-250</b> = (Blazingur 👾) / (Gemma 😈)&nbsp;</p>
-                <p><br /></p>
+                <p></p>
                 <p><b>Level 255-255</b>&nbsp;= Ferzen si Naga Batu 😈(Hutan Penjaga: Pohon
                     Raksasa)</p>
                 <p><br /></p>
@@ -78,13 +81,13 @@ const Toram1 = () => {
                     boss berarti boss paling atas memiliki exp paling tinggi dari boss no 2 atau 3. Namun semakin tinggi
                     nilai expnya maka semakin sulit boss yang akan kalian hadapi, jadi sesuaikan dengan kemampuan
                     masing-masing yah dan jangan lupa untuk mencari Party! biar lebih cepat.</p>
-                <p><br />
+                <p>
                 </p>
                 <p>Silahkan Komen Untuk Kritik dan Sarannya ya!^^</p>
             </div>
         </div>
     </div>
-    
+    <Footer />
     </>
     )
 }

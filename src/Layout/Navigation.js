@@ -10,6 +10,8 @@ import '../assets/css/navigation.css';
 const Navigation = () => {
     const [isSidebarVisible, setSidebarVisible] = useState(false);
     const [isSticky, setIsSticky] = useState(false);
+    const [isBanner, setIsBanner] = useState(false);
+
 
     const showSide = () => {
         setSidebarVisible(true);
@@ -48,6 +50,20 @@ const Navigation = () => {
         };
     }, []);
 
+    const banner = () => {
+        const sticky = 0;
+        if (window.pageYOffset > sticky) {
+            setIsBanner(true);
+        } else {
+            setIsBanner(false);
+        }
+    };
+    useEffect(() => {
+        window.addEventListener('scroll', banner);
+        return () => {
+            window.removeEventListener('scroll', banner);
+        };
+    }, []);
 
     return (
     <header>
@@ -77,6 +93,7 @@ const Navigation = () => {
                 <img src={Menu} alt="menu" style={{width: 25}}/>
             </a>
         </nav>
+        <div className={isBanner ? 'banner': ''}></div>
     </header>
     )
 }
