@@ -1,4 +1,5 @@
-import React, {Link} from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import torambg from '../assets/img/toram background.jpeg'
 import veotoram from '../assets/img/veo-toram.jpg'
 import '../assets/css/main.css';
