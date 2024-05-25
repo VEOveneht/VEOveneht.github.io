@@ -5,7 +5,7 @@ import Menu from '../assets/img/svg/menu.svg'
 import Close from '../assets/img/svg/close.svg'
 
 // ! CSS
-import '../assets/css/navbar.css';
+import '../assets/css/navigation.css';
 
 const Navigation = () => {
     const [isSidebarVisible, setSidebarVisible] = useState(false);
@@ -51,28 +51,30 @@ const Navigation = () => {
 
     return (
     <header>
+        <div id='portofolio'></div>
+        <p className="scrollup"><img src="./assets/img/svg/up.svg" alt='up'/></p>
         <nav role="navigation" className={isSticky ? 'sticky' : ''}>
-            <p class="logo">LISAN<a id="blink" href>_</a></p>
+            <p className="logo">LISAN<a id="blink" href>_</a></p>
             <div className='links'>
-                <Link class="list_nav" to="/" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Home</Link>
-                <Link class="list_nav" to="/blog" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Blog</Link>
-                <Link class="list_nav" to="/store" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Store</Link>
-                <Link class="list_nav" to="/portofolio" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Portofolio</Link>
-                <a class="list_nav" href={CV} download="Lisan Shidqi Farizan" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>CV</a>
+                <Link className="list_nav" to="/" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Home</Link>
+                <a className="list_nav" href="#blog" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Blog</a>
+                <a className="list_nav" href="#store" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Store</a>
+                <a className="list_nav" href="#portofolio" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Portofolio</a>
+                <a className="list_nav" href={CV} download="Lisan Shidqi Farizan" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>CV</a>
             </div>
-            <div class="sidebar" style={{ width: isSidebarVisible ? '100%' : '0' }}>
+            <div className="sidebar" style={{ width: isSidebarVisible ? '100%' : '0' }}>
                 <p>LISAN<a id="blink" href>_</a></p>
                 <a id="close" onClick={hideSide} href><img src={Close} alt="close" style={{width: 25 }}/></a>
                 <div className='side'>
-                    <Link class="list_nav" to="/" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Home</Link>
-                    <Link class="list_nav" to="/blog" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Blog</Link>
-                    <Link class="list_nav" to="/store" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Store</Link>
-                    <Link class="list_nav" to="/portofolio" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Portofolio</Link>
-                    <a class="list_nav" href={CV} download="Lisan Shidqi Farizan" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>CV</a>
+                    <Link className="list_nav" to="/" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Home</Link>
+                    <a className="list_nav" href="#blog" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Blog</a>
+                    <a className="list_nav" href="#store" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Store</a>
+                    <a className="list_nav" href="#portofolio" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Portofolio</a>
+                    <a className="list_nav" href={CV} download="Lisan Shidqi Farizan" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>CV</a>
                 </div>
             </div>
             <a id="menu" onClick={showSide} href>
-                <img src={Menu} alt="menu" style={{width: 25}}/>   
+                <img src={Menu} alt="menu" style={{width: 25}}/>
             </a>
         </nav>
     </header>

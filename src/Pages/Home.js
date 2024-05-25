@@ -1,8 +1,8 @@
 import React from "react";
 
-import Navigation from '../components/Navigation';
-import Main from '../components/Main';
-import Footer from '../components/Footer';
+import Navigation from '../Layout/Navigation';
+import Main from '../Layout/Main';
+import Footer from '../Layout/Footer';
 
 
 const Home = () => {

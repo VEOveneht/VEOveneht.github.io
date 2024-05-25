@@ -1,14 +1,13 @@
 import React from "react";
-import Navigation from "../components/Navigation";
+import Navigation from "../Layout/Navigation";
 import Footer from "../components/Footer";
 
 const Blog = () => {
     return (
     <>
     <Navigation />
-    <main>
-    <h1>Blog</h1>
-    </main>
+    <div className="container">
+    </div>
     <Footer />
     </>)
 }
