@@ -13,7 +13,9 @@ const Contact = () => {
     <>
     <Navigation />
     <main className="contact-container">
-        <h1>Contact US</h1><br/>
+        <br/>
+        <h1>Contact Us</h1>
+        <br/>
         <div id="contact">
             <form>
                 <label htmlFor="name">Name: </label>
@@ -26,12 +28,15 @@ const Contact = () => {
             </form>
         </div>
         <div id="sosmed">
+            <br/>
             <h1>Social</h1>
+            <br/>
             <div>
                 <button ><img alt="Github" src={github}/><a href="https://github.com/VEOveneht">Github</a></button>
                 <button ><img alt="Instagram" src={instagram}/><a href="https://www.instagram.com/loo3837955ol/">Instagram</a></button>
                 <button ><img alt="Twitter" src={twitter}/><a href="https://x.com/FOBDBM">Twitter</a></button>
             </div>
+            <br/>
         </div>
     </main>
     <Footer />

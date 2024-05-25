@@ -15,7 +15,6 @@ div#contact {
     max-width: 40vh;
     background-color: #fff;
     padding: 20px;
-    margin: 0vh 0vh 5vh 0vh;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
 }
@@ -61,16 +60,11 @@ div#sosmed {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 0vh 0vh 5vh 0vh;
 }
 
 div#sosmed div {
     display: flex;
     gap: 2vh;
-}
-
-div#sosmed h1 {
-    margin: 0vh 0vh .7vh 0vh;
 }
 
 div#sosmed div button {
@@ -91,6 +85,10 @@ div#sosmed div button:hover {
 
 div#sosmed div button img {
     fill: currentColor;
+}
+
+a {
+    color: black;
 }
 
 
