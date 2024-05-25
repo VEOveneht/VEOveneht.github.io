@@ -14,7 +14,7 @@ const Main = () => {
                         <div className='card'>
                             <img alt='veo' src={veotoram} style={{width: '30vh'}}></img>
                             <div className='bg-text'>
-                            <a href='/leveling toram online'>Leveling Toram Online Level 1-255 (2024)</a>
+                            <a href='/leveling-toram-online'>Leveling Toram Online Level 1-255 (2024)</a>
                             </div>
                         </div>
                         <div className='card'>
