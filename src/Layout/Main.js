@@ -15,19 +15,19 @@ const Main = () => {
                         <div className='card'>
                             <img alt='veo' src={veotoram} style={{width: '30vh'}}></img>
                             <div className='bg-text'>
-                            <Link to='/leveling-toram-online'>Leveling Toram Online Level 1-255 (2024)</Link>
+                                <Link to='/leveling-toram-online'>Leveling Toram Online Level 1-255 (2024)</Link>
                             </div>
                         </div>
                         <div className='card'>
                             <img alt='Toram Online BG' src={torambg} style={{width: '30vh'}}></img>
                             <div className='bg-text'>
-                                <a href='/'> Toram Online GUIDE (ID)</a>
+                                <Link to='/'> Toram Online GUIDE (ID)</Link>
                             </div>
                         </div>
                         <div className='card'>
                             <img alt='Toram Online BG' src={torambg} style={{width: '30vh'}}></img>
                             <div className='bg-text'>
-                                <a href='/'>Bahan MQ Toram (2023 Update)</a>
+                                <Link to='/bahan-mq-toram'>Bahan MQ Toram (2023 Update)</Link>
                             </div>
                         </div>
                     </div>
