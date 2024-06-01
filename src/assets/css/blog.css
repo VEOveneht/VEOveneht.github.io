@@ -1,0 +1,39 @@
+div.blog-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.blog-card div {
+    gap: 1vh;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+div.blog-card div img {
+    width: 90%;
+    transition: .5s;
+}
+
+@media screen and (min-width: 758px) and (max-width: 1024px) {
+    div.blog-card div {
+        display: flex;
+        gap: 1vh;
+    }
+
+    div.blog-card div img {
+        width: 30vh;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    div.blog-card div {
+        display: flex;
+        gap: 2vh;
+    }
+
+    div.blog-card div img {
+        width: 30vh;
+    }
+}

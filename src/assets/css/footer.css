@@ -12,15 +12,15 @@ footer {
     bottom: 0;
 }
 
-footer div div.foot_links {
+footer div ul.foot_links {
     display: flex;
     align-content: center;
     gap: 1vh;
     margin: 1vh;
 }
 
-footer div div.foot_links a,
-footer div p a {
+footer div ul.foot_links li a,
+footer div p {
     text-align: center;
     align-content: center;
     color: white;
@@ -28,9 +28,22 @@ footer div p a {
     font-size: small;
 }
 
-footer div div.foot_links a:hover {
+footer div ul.foot_links li a:hover {
     color: #3179d8;
 }
 
+@media screen and (min-width: 758px) and (max-width: 1024px) {
+    footer div {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 2048px) {
+    footer div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
 /* *End Footer */

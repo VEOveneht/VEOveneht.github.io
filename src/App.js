@@ -27,8 +27,9 @@ function App() {
           <Route path='/disclaimer' element={<Disclaimer />}/>
           <Route path='/contact' element={<Contact />}/>
           <Route path='/privacy-policy' element={<PrivacyPolicy />} />
-          <Route path='/leveling-toram-online' element={<LevelingToram />} />
-          <Route path='/bahan-mq-toram' element={<BahanMQToram />} />
+          {/* BLOG POST */}
+          <Route path='/blog/leveling-toram-online' element={<LevelingToram />} />
+          <Route path='/blog/bahan-mq-toram' element={<BahanMQToram />} />
         </Routes>
       </Router>
     </div>

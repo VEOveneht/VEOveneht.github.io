@@ -9,14 +9,14 @@ const Footer = ()  => {
     return (
         <footer>
             <div>
-                <div className="foot_links">
-                    <Link className="list_foot" to="/">HOME</Link>
-                    <Link className="list_foot" to="/blog">BLOG</Link>
-                    <Link className="list_foot" to="/store">STORE</Link>
-                    <Link className="list_foot" to="/disclaimer">DISCLAIMER</Link>
-                    <Link className="list_foot" to="/contact">CONTACT</Link>
-                </div>
-                <p><a href>Made By Lisan Shidqi Farizan | &copy;2023 VEOveneht |</a></p>
+                <ul className="foot_links">
+                    <li><Link className="list_foot" to="/">HOME</Link></li>
+                    <li><Link className="list_foot" to="/blog">BLOG</Link></li>
+                    <li><Link className="list_foot" to="/store">STORE</Link></li>
+                    <li><Link className="list_foot" to="/disclaimer">DISCLAIMER</Link></li>
+                    <li><Link className="list_foot" to="/contact">CONTACT</Link></li>
+                </ul>
+                <p>Made By Lisan Shidqi Farizan |&copy;2023 VEOveneht|</p>
             </div>
         </footer>
     )

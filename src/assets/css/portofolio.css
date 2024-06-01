@@ -1,6 +1,6 @@
+/* !Portofolio */
 div#profile_top {
     width: 100%;
-    margin: 2vh;
     text-align: center;
 }
 
@@ -15,36 +15,38 @@ div#profile_top {
 
 div#my_project {
     width: 100%;
-    margin: 5vh 0vh 0vh 0vh;
     text-align: center;
 }
 
-div.wrap {
-    width: 100%;
+
+div.porto-card {
+    position: relative;
+    gap: 2px;
+    transition: .3s;
+}
+
+div.porto-card div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-div.card {
-    position: relative;
-    gap: 2px;
-    margin: 0vh 0vh 2vh 0vh;
-    transition: .3s;
-}
-
-div.card img {
+div.porto-card div img {
     width: 320px;
 }
 
-div.card p a {
-    color: black;
-    transition: .3s ease-in-out;
+div.porto-card a {
+    margin: 2px 0px 10px 0px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: royalblue;
+    color: white;
+    transition: .3s ease-in;
 }
 
-div.card p a:hover {
-    color: royalblue;
+div.porto-card a:hover {
+    background-color: blue;
 }
 
 @media screen and (min-width: 758px) and (max-width: 1024px) {
@@ -54,7 +56,7 @@ div.card p a:hover {
         align-items: center;
         text-align: center;
         width: 85vh;
-        gap: 2vh;
+        gap: 1vh;
         transition: .3s;
     }
 
@@ -66,14 +68,14 @@ div.card p a:hover {
         width: 80%;
     }
 
-    div.card {
+    div.porto-card {
         display: flex;
         justify-content: center;
         gap: 30px;
     }
 }
 
-@media screen and (min-width: 1025px) and (max-width: 2048px) {
+@media screen and (min-width: 1025px) {
     div#profile_top {
         display: flex;
         justify-content: space-around;
@@ -88,9 +90,11 @@ div.card p a:hover {
         width: 35vh;
     }
 
-    div.card {
+    div.porto-card {
         display: flex;
         justify-content: center;
         gap: 120px;
     }
 }
+
+/* !End Portofolio */

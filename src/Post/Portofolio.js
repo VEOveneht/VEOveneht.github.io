@@ -12,14 +12,14 @@ import Footer from "../Layout/Footer";
 import '../assets/css/portofolio.css'
 
 const Portofolio = () => {
-    
-
     return(
     <>
         <Navigation />
             <div className="container">
                 <div className="wrap">
+                    <br/>
                 <h1>MY PORTOFOLIO</h1>
+                <br/>
                     <div id="profile_top">
                         <div>
                             <img id="mepng" alt="Lisan Shidqi Farizan" src={mepng} />
@@ -33,40 +33,43 @@ const Portofolio = () => {
                                 effort to create a stunning look.</p>
                         </div>
                     </div>
+                        <br/>
                 </div>
                 <div className="wrap">
                     <div id="my_project">
+                        <br/>
                         <h2>Certificate</h2>
-                        <div className="card">
+                        <div className="porto-card">
                             <div>
-                                <img src={certHTML}
-                                    alt="Certificate HTML from Sololearn" />
-                                <p><a href={certHTML} download="Lisans Certificate">HTML
-                                        Certificate</a></p>
+                                <img src={certHTML} alt="Certificate HTML from Sololearn" />
+                                <a href={certHTML} download="Lisans Certificate">HTML Certificate</a>
                             </div>
                         </div>
+                        <br/>
                         <h2>My Project</h2>
-                        <div className="card">
+                        <div className="porto-card">
                             <div>
                                 <img src={calc} alt="Store" />
-                                <p><Link to="/store">Store</Link></p>
+                                <Link to="/store">Store</Link>
                             </div>
                             <div>
                                 <img src={calc} alt="Bot Whatsapp" />
-                                <p><Link to="/VeoBot">Bot WhatsApp</Link></p>
+                                <Link to="/VeoBot">Bot WhatsApp</Link>
                             </div>
                         </div>
+                        <br/>
                         <h2>Fake Project</h2>
-                        <div className="card">
+                        <div className="porto-card">
                             <div>
                                 <img src={calc} alt="Simple Calculator" />
-                                <p><Link to="/simple-calculator">Simple Calculator</Link></p>
+                                <Link to="/simple-calculator">Simple Calculator</Link>
                             </div>
                             <div>
                                 <img src={calc} alt="Simple Calculator with NodeJS" />
-                                <p><a href="./FakeProject/SimpleNodeCalculator.js">Simple Node Calculator</a></p>
+                                <a href="./FakeProject/SimpleNodeCalculator.js">Simple Node Calculator</a>
                             </div>
                         </div>
+                        <br/>
                     </div>
                 </div>
             </div>
