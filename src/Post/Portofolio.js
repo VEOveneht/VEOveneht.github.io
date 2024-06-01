@@ -8,6 +8,9 @@ import calc from "../assets/img/calc.png";
 import Navigation from "../Layout/Navigation";
 import Footer from "../Layout/Footer";
 
+// ! CSS
+import '../assets/css/portofolio.css'
+
 const Portofolio = () => {
     
 
@@ -16,14 +19,15 @@ const Portofolio = () => {
         <Navigation />
             <div className="container">
                 <div className="wrap">
-                <h1>MY PORTOFOLIO</h1>  
+                <h1>MY PORTOFOLIO</h1>
                     <div id="profile_top">
                         <div>
                             <img id="mepng" alt="Lisan Shidqi Farizan" src={mepng} />
                             <h1>Lisan Shidqi Farizan</h1>
                         </div>
                         <div>
-                            <h1>Front-End Developer</h1><br/>
+                            <br/>
+                            <h1>Front-End Developer</h1>
                             <p>Coding is my passion, make a character that are not only functional but also present an
                                 appealing aesthetic is my commitment. My dedication to each project is reflected in the
                                 effort to create a stunning look.</p>

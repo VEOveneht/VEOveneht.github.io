@@ -15,7 +15,6 @@ const Footer = ()  => {
                     <Link className="list_foot" to="/store">STORE</Link>
                     <Link className="list_foot" to="/disclaimer">DISCLAIMER</Link>
                     <Link className="list_foot" to="/contact">CONTACT</Link>
-                    <Link className="list_foot" to="/privacy-policy">PRIVACY POLICY</Link>
                 </div>
                 <p><a href>Made By Lisan Shidqi Farizan | &copy;2023 VEOveneht |</a></p>
             </div>

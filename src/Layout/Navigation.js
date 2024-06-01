@@ -73,9 +73,9 @@ const Navigation = () => {
             <p className="logo">LISAN<a id="blink" href>_</a></p>
             <div className='links'>
                 <Link className="list_nav" to="/" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Home</Link>
-                <a className="list_nav" href="#blog" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Blog</a>
-                <a className="list_nav" href="#store" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Store</a>
-                <a className="list_nav" href="#portofolio" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Portofolio</a>
+                <Link className="list_nav" to="/blog" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Blog</Link>
+                <Link className="list_nav" to="/store" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Store</Link>
+                <Link className="list_nav" to="/portofolio" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Portofolio</Link>
                 <a className="list_nav" href={CV} download="Lisan Shidqi Farizan" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>CV</a>
             </div>
             <div className="sidebar" style={{ width: isSidebarVisible ? '100%' : '0' }}>
@@ -83,9 +83,9 @@ const Navigation = () => {
                 <a id="close" onClick={hideSide} href><img src={Close} alt="close" style={{width: 25 }}/></a>
                 <div className='side'>
                     <Link className="list_nav" to="/" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Home</Link>
-                    <a className="list_nav" href="#blog" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Blog</a>
-                    <a className="list_nav" href="#store" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Store</a>
-                    <a className="list_nav" href="#portofolio" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Portofolio</a>
+                    <Link className="list_nav" to="/blog" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Blog</Link>
+                    <Link className="list_nav" to="/store" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Store</Link>
+                    <Link className="list_nav" to="/portofolio" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Portofolio</Link>
                     <a className="list_nav" href={CV} download="Lisan Shidqi Farizan" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>CV</a>
                 </div>
             </div>

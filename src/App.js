@@ -6,6 +6,7 @@ import Home from './Pages/Home';
 import Blog from './Pages/Blog';
 import About from './Pages/About';
 import Store from './Pages/Store';
+import Portofolio from './Post/Portofolio';
 import Disclaimer from './Pages/Disclaimer';
 import Contact from './Pages/Contact';
 import PrivacyPolicy from './Pages/PrivacyPolicy';
@@ -22,6 +23,7 @@ function App() {
           <Route path='/blog' element={<Blog />}/>
           <Route path='/about' element={<About />}/>
           <Route path='/store' element={<Store />}/>
+          <Route path='/portofolio' element={<Portofolio />}/>
           <Route path='/disclaimer' element={<Disclaimer />}/>
           <Route path='/contact' element={<Contact />}/>
           <Route path='/privacy-policy' element={<PrivacyPolicy />} />

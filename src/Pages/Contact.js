@@ -24,7 +24,7 @@ const Contact = () => {
                 <input type="email" id="email" placeholder="Email" name="email"/>
                 <label htmlFor="description">Description: </label>
                 <textarea id="description" placeholder="Deskripsi" name="deskripsi"></textarea>
-                <button type="submit">Submit</button>
+                <button className="contact-btn" type="submit">Submit</button>
             </form>
         </div>
         <div id="sosmed">
@@ -32,9 +32,18 @@ const Contact = () => {
             <h1>Social</h1>
             <br/>
             <div>
-                <button ><img alt="Github" src={github}/><a href="https://github.com/VEOveneht">Github</a></button>
-                <button ><img alt="Instagram" src={instagram}/><a href="https://www.instagram.com/loo3837955ol/">Instagram</a></button>
-                <button ><img alt="Twitter" src={twitter}/><a href="https://x.com/FOBDBM">Twitter</a></button>
+                    <a href="https://github.com/VEOveneht" className="sosmed-btn">
+                    <img alt="Github" src={github}/>
+                    Github
+                    </a>
+                    <a href="https://www.instagram.com/loo3837955ol/" className="sosmed-btn">
+                    <img alt="Instagram" src={instagram}/>
+                    Instagram
+                    </a>
+                    <a href="https://x.com/FOBDBM" className="sosmed-btn">
+                    <img alt="Twitter" src={twitter}/>
+                    Twitter
+                    </a>
             </div>
             <br/>
         </div>

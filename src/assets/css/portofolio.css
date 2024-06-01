@@ -1,0 +1,96 @@
+div#profile_top {
+    width: 100%;
+    margin: 2vh;
+    text-align: center;
+}
+
+div#profile_top #mepng {
+    width: 32vh;
+    filter: drop-shadow(4px 4px 4px black);
+}
+
+div#profile_top {
+    width: 35vh;
+}
+
+div#my_project {
+    width: 100%;
+    margin: 5vh 0vh 0vh 0vh;
+    text-align: center;
+}
+
+div.wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.card {
+    position: relative;
+    gap: 2px;
+    margin: 0vh 0vh 2vh 0vh;
+    transition: .3s;
+}
+
+div.card img {
+    width: 320px;
+}
+
+div.card p a {
+    color: black;
+    transition: .3s ease-in-out;
+}
+
+div.card p a:hover {
+    color: royalblue;
+}
+
+@media screen and (min-width: 758px) and (max-width: 1024px) {
+    div#profile_top {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        width: 85vh;
+        gap: 2vh;
+        transition: .3s;
+    }
+
+    div#profile_top div {
+        width: 35vh;
+    }
+
+    div#blog {
+        width: 80%;
+    }
+
+    div.card {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 2048px) {
+    div#profile_top {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        width: 100vh;
+        gap: 2vh;
+        transition: .3s;
+    }
+
+    div#profile_top div {
+        width: 35vh;
+    }
+
+    div.card {
+        display: flex;
+        justify-content: center;
+        gap: 120px;
+    }
+}

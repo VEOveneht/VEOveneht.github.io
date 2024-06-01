@@ -30,7 +30,7 @@ label {
 
 input,
 textarea,
-button {
+button.contact-btn {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -44,7 +44,7 @@ textarea {
     resize: vertical;
 }
 
-button {
+button.contact-btn {
     cursor: pointer;
     background-color: var(--03);
     color: white;
@@ -52,7 +52,7 @@ button {
     font-size: 16px;
 }
 
-button:hover {
+button.contact-btn:hover {
     background-color: var(--04);
 }
 
@@ -67,30 +67,27 @@ div#sosmed div {
     gap: 2vh;
 }
 
-div#sosmed div button {
+a.sosmed-btn {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     gap: 1vh;
+    padding: 10px;
     background-color: white;
     border: var(--03) solid 1px;
+    border-radius: 10px;
     color: var(--03);
+    transition: .3s;
 }
 
-div#sosmed div button:hover {
+a.sosmed-btn:hover {
     background-color: var(--03);
     color: white;
 }
 
-div#sosmed div button img {
-    fill: currentColor;
-}
-
-a {
+a.sosmed-btn {
     color: black;
 }
-
-
 
 /* *End Contact */
