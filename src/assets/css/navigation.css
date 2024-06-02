@@ -135,7 +135,7 @@ nav div.links .list_nav {
     }
 }
 
-@media screen and (min-width: 1025px) and (max-width: 2048px) {
+@media screen and (min-width: 1025px) {
     p.logo {
         margin: 0vh auto 0vh 16vh;
     }

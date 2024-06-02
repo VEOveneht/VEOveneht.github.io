@@ -11,6 +11,7 @@ import Disclaimer from './Pages/Disclaimer';
 import Contact from './Pages/Contact';
 import PrivacyPolicy from './Pages/PrivacyPolicy';
 import LevelingToram from './Post/ToramOnlineLeveling';
+import ToramGuide from './Post/ToramOnlineGuide';
 import BahanMQToram from './Post/BahanMQToram';
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route path='/privacy-policy' element={<PrivacyPolicy />} />
           {/* BLOG POST */}
           <Route path='/blog/leveling-toram-online' element={<LevelingToram />} />
+          <Route path='/blog/toram-online-guide' element={<ToramGuide />} />
           <Route path='/blog/bahan-mq-toram' element={<BahanMQToram />} />
         </Routes>
       </Router>
