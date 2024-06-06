@@ -9,7 +9,8 @@ const ToramGuide = () => {
         <main>
             <div className='container'>
                 <div className='wrap'>
-                    <h2>Halo Petualang, selamat datang di blog saya.</h2>
+                    <h2>Toram Online GUIDE (ID)</h2>
+                    <p>Halo Petualang, selamat datang di blog saya.</p>
                     <p>Seperti diketahui, 
                         Toram Online mengusung genre RPG dengan 
                         spesialisasi PvE atau <i>playing against monsters.</i> 
@@ -24,12 +25,12 @@ const ToramGuide = () => {
                     </p>
                     <br/>
                     <ul>
-                        <li>&#10050; Menu, di sudut kiri atas layar, berisi bagian utama game (skill, inventori, karakter, dst).</li>
-                        <li>&#10050; Chat, di sudut kanan atas layar, kamu bisa chat dengan pemain lain di sini.</li>
-                        <li>&#10050; Action, ada di sisi kanan layar, kamu bisa mengaktivasi serangan fisik di sini.</li>
-                        <li>&#10050; List, membantumu mencari skill yang diperlukan saat bertempur dan berganti skill dengan cepat.</li>
-                        <li>&#10050; Channel, nomor server tempatmu berada.</li>
-                        <li>&#10050; Emblem atau mini-tasks, menunjukkan sejauh mana pencapaian kamu.</li>
+                        <li> Menu, di sudut kiri atas layar, berisi bagian utama game (skill, inventori, karakter, dst).</li>
+                        <li> Chat, di sudut kanan atas layar, kamu bisa chat dengan pemain lain di sini.</li>
+                        <li> Action, ada di sisi kanan layar, kamu bisa mengaktivasi serangan fisik di sini.</li>
+                        <li> List, membantumu mencari skill yang diperlukan saat bertempur dan berganti skill dengan cepat.</li>
+                        <li> Channel, nomor server tempatmu berada.</li>
+                        <li> Emblem atau mini-tasks, menunjukkan sejauh mana pencapaian kamu.</li>
                     </ul>
                     <br/>
                     <p>
@@ -51,11 +52,11 @@ const ToramGuide = () => {
                     </p>
                     <br/>
                     <ul>
-                        <li>&#10050; Mage, senjata utamanya adalah tongkat, punya magic attack yang ditingkatkan, memberi damage pada jarak tertentu di sebuah area.</li>
-                        <li>&#10050; Archer, si pemegang busur yang memiliki kecepatan serangan tinggi.</li>
-                        <li>&#10050; Swordsman, sosok petarung yang biasa bertempur dengan tangan kosong atau sarung tangan.</li>
-                        <li>&#10050; Samurai, punya pedang katana yang ia kuasai dengan baik, ahli menghindar dan punya mobilitas cepat.</li>
-                        <li>&#10050; Halberdier, sang pemilik tombak kerajaan.</li>
+                        <li> Mage, senjata utamanya adalah tongkat, punya magic attack yang ditingkatkan, memberi damage pada jarak tertentu di sebuah area.</li>
+                        <li> Archer, si pemegang busur yang memiliki kecepatan serangan tinggi.</li>
+                        <li> Swordsman, sosok petarung yang biasa bertempur dengan tangan kosong atau sarung tangan.</li>
+                        <li> Samurai, punya pedang katana yang ia kuasai dengan baik, ahli menghindar dan punya mobilitas cepat.</li>
+                        <li> Halberdier, sang pemilik tombak kerajaan.</li>
                     </ul>
                     <br/>
                     <p>

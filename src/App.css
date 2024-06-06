@@ -24,19 +24,3 @@ body {
 a {
   text-decoration: none;
 }
-
-li {
-  list-style-type: none;
-}
-
-.scrollup {
-  padding: 1vh 1.5vh 1vh 1.5vh;
-  position: fixed;
-  bottom: 5vh;
-  right: 1vh;
-  cursor: pointer;
-  border-radius: 50px;
-  background-color: var(--01);
-  opacity: 0%;
-  transition: 0.3s;
-}

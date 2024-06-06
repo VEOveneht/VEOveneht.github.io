@@ -6,10 +6,12 @@ import Home from './Pages/Home';
 import Blog from './Pages/Blog';
 import About from './Pages/About';
 import Store from './Pages/Store';
-import Portofolio from './Post/Portofolio';
+import Portofolio from './Pages/Portofolio';
 import Disclaimer from './Pages/Disclaimer';
 import Contact from './Pages/Contact';
 import PrivacyPolicy from './Pages/PrivacyPolicy';
+import Bot from './Pages/Bot';
+// ! Blog Post
 import LevelingToram from './Post/ToramOnlineLeveling';
 import ToramGuide from './Post/ToramOnlineGuide';
 import BahanMQToram from './Post/BahanMQToram';
@@ -22,6 +24,7 @@ function App() {
           <Route component={NotFound} />
           <Route path='/' element={<Home />}/>
           <Route path='/blog' element={<Blog />}/>
+          <Route path='/VeoBot' element={<Bot />}/>
           <Route path='/about' element={<About />}/>
           <Route path='/store' element={<Store />}/>
           <Route path='/portofolio' element={<Portofolio />}/>

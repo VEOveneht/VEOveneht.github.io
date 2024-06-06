@@ -64,10 +64,6 @@ div.porto-card a:hover {
         width: 35vh;
     }
 
-    div#blog {
-        width: 80%;
-    }
-
     div.porto-card {
         display: flex;
         justify-content: center;

@@ -10,8 +10,9 @@ const Toram1 = () => {
     <Navigation />
     <div className="container">
         <div className="wrap">
-            <h2>Halo Petualang, selamat datang di blog saya.</h2>
-            <h2>Saya disini ingin membagikan tips singkat leveling di Game MMORPG TORAM ONLINE (level 1-255)</h2>
+            <h2>Leveling Toram Online Level 1-255 (2024)</h2>
+            <p>Halo Petualang, selamat datang di blog saya.</p>
+            <p>Saya disini ingin membagikan tips singkat leveling di Game MMORPG TORAM ONLINE (level 1-255)</p>
             <br /><p>Game ini menggabungkan dua hal favorit kamu dalam satu aktivitas permainan seru. Termasuk genre MMORPG,
                 game bernama lengkap Toram Online – Departure from Iruna – sudah hadir untuk pengguna Android dan iOS
                 sejak 2015.

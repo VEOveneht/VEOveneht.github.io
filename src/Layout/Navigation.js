@@ -3,22 +3,26 @@ import { Link } from 'react-router-dom';
 import CV from '../assets/img/CV.png'
 import Menu from '../assets/img/svg/menu.svg'
 import Close from '../assets/img/svg/close.svg'
+import up from '../assets/img/svg/up.svg'
 
 // ! CSS
 import '../assets/css/navigation.css';
 
 const Navigation = () => {
     const [isSidebarVisible, setSidebarVisible] = useState(false);
+    const [upIsVisible, setUpIsVisible] = useState(false);
     const [isSticky, setIsSticky] = useState(false);
     const [isBanner, setIsBanner] = useState(false);
 
-
+    // ! OnClick
     const showSide = () => {
         setSidebarVisible(true);
     };
     const hideSide = () => {
         setSidebarVisible(false);
     };
+    
+    // ! End og OnClick
     
     const handleMouseEnter = (e) => {
         const navLinks = document.querySelectorAll('.list_nav');
@@ -43,34 +47,33 @@ const Navigation = () => {
             setIsSticky(false);
         }
     };
-    useEffect(() => {
-        window.addEventListener('scroll', scroll);
-        return () => {
-            window.removeEventListener('scroll', scroll);
-        };
-    }, []);
 
     const banner = () => {
-        const sticky = 0;
+        const sticky = 1000;
         if (window.pageYOffset > sticky) {
             setIsBanner(true);
+            setUpIsVisible(true);
         } else {
             setIsBanner(false);
+            setUpIsVisible(false);
         }
     };
+
     useEffect(() => {
+        window.addEventListener('scroll', scroll);
         window.addEventListener('scroll', banner);
         return () => {
             window.removeEventListener('scroll', banner);
+            window.removeEventListener('scroll', scroll);
         };
     }, []);
 
     return (
     <header>
-        <div id='portofolio'></div>
-        <p className="scrollup"><img src="./assets/img/svg/up.svg" alt='up'/></p>
+        <p id='upper'></p>
+        <a className='scrollup' style={{opacity: upIsVisible ? '100%' : '0%'}} href='#upper'><img src={up} alt='up'/></a>
         <nav role="navigation" className={isSticky ? 'sticky' : ''}>
-            <p className="logo">LISAN<a id="blink" href>_</a></p>
+            <Link to='/' className="logo">LISAN<a id="blink" href>_</a></Link>
             <div className='links'>
                 <Link className="list_nav" to="/" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Home</Link>
                 <Link className="list_nav" to="/blog" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Blog</Link>

@@ -1,5 +1,20 @@
 /* *Sidebar */
 
+.scrollup {
+    padding: 1vh 1.5vh 1vh 1.5vh;
+    position: fixed;
+    bottom: 8vh;
+    right: 43.5vw;
+    left: 43.5vw;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: var(--01);
+    opacity: 0%;
+    transition: 0.3s;
+    z-index: 1;
+    text-align: center;
+}
+
 .sticky {
     position: fixed;
     top: 0;
@@ -77,11 +92,12 @@ nav {
     right: 0;
 }
 
-p.logo {
+a.logo {
     margin: 0vh auto 0vh 2vh;
     font-size: 2em;
     font-weight: bold;
     transition: 0.5s ease-in-out;
+    color: black;
 }
 
 nav div.links {
@@ -111,6 +127,8 @@ nav div.links .list_nav {
 }
 
 
+
+
 @keyframes blink {
     50% {
         opacity: 0;
@@ -118,7 +136,7 @@ nav div.links .list_nav {
 }
 
 @media screen and (min-width: 758px) and (max-width: 1024px) {
-    p.logo {
+    a.logo {
         margin: 0vh auto 0vh 8vh;
     }
 
@@ -136,7 +154,7 @@ nav div.links .list_nav {
 }
 
 @media screen and (min-width: 1025px) {
-    p.logo {
+    a.logo {
         margin: 0vh auto 0vh 16vh;
     }
 

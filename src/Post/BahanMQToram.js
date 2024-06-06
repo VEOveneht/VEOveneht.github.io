@@ -10,7 +10,7 @@ const BahanMQToram = () => {
         <div className='container'>
             <div className='wrap'>
                 <h2>Bahan MQ Toram (2023 Update)</h2>
-                <h2>Halo Petualang! Selamat Datang di Blog Kami^^</h2><br/>
+                <p>Halo Petualang! Selamat Datang di Blog Kami^^</p><br/>
                 <p>Sekarang kita akan membahas tentang Bahan - bahan Untuk MQ disini kita bisa membelinya di Papan atau mendapatkannya dari Mob.</p><br/>
                 <p>Nah Untuk MQ (Main Quest / Misi Utama) Kita Membutuhkan:</p>
                 <table>

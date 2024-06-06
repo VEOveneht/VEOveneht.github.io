@@ -11,12 +11,13 @@ main.contact-container {
 div#contact {
     width: 100%;
     align-content: center;
-    min-width: 38vh;
-    max-width: 40vh;
+    min-width: 80vw;
+    max-width: 80vw;
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+    transition: .2s;
 }
 
 form {
@@ -40,7 +41,7 @@ button.contact-btn {
 }
 
 textarea {
-    height: 10vh;
+    height: 100%;
     resize: vertical;
 }
 
@@ -88,6 +89,20 @@ a.sosmed-btn:hover {
 
 a.sosmed-btn {
     color: black;
+}
+
+@media screen and (min-width: 758px) and (max-width: 1024px) {
+    div#contact {
+        min-width: 50vw;
+        max-width: 50vw;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    div#contact {
+        min-width: 50vw;
+        max-width: 50vw;
+    }
 }
 
 /* *End Contact */

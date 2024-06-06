@@ -1,7 +1,17 @@
+div.main-wrapper {
+    padding: 4vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 220, 255);
+    gap: 3vh;
+}
+
 div.blog-card {
     background-color: white;
     padding: 20px;
-    margin: 0vh 0vh 2vh 0vh;
+    margin: 0vh 0vh 3vh 0vh;
     border-radius: 10px;
 }
 
@@ -20,13 +30,37 @@ div.blog-card div p {
     color: rgb(77, 77, 77);
 }
 
-div.blog-card div img {
+div.blog-card div a {
+    min-width: 300px;
+    max-width: 300px;
+    align-content: center;
+}
+
+
+div.blog-card div a img {
     width: 100%;
-    max-width: 500px;
+}
+
+div.blog-card div a img:hover {
+    transform: scale(1.01);
+    opacity: 85%;
 }
 
 div.blog-card a:hover {
     color: #3179d8;
+}
+
+div.support-card {
+    background-color: white;
+    padding: 20px;
+    margin: 0vh 0vh 2vh 0vh;
+    border-radius: 10px;
+    text-align: center;
+}
+
+div.support-card p {
+    margin: 0px 0px 5px 0px;
+    border-bottom: solid 2px black;
 }
 
 @media screen and (min-width: 555px) and (max-width: 1024px) {
@@ -39,15 +73,20 @@ div.blog-card a:hover {
     div.blog-card div {
         display: flex;
     }
+}
 
-    div.blog-card div img {
-        width: 35vw;
+@media screen and (min-width: 758px) {
+    div.main-wrapper {
+        flex-direction: row;
+        align-items: normal;
+        gap: 3vh;
     }
+
 }
 
 @media screen and (min-width: 1025px) {
     div.blog-card a {
-        font-size: 2rem;
+        font-size: 1.8rem;
         color: black;
     }
 
@@ -58,5 +97,12 @@ div.blog-card a:hover {
     div.blog-card div img {
         width: 35vh;
         transition: .5s;
+    }
+
+    div.main-wrapper {
+        width: 94vh;
+        flex-direction: row;
+        align-items: normal;
+        gap: 3vh;
     }
 }
