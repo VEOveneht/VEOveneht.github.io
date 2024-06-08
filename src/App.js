@@ -19,7 +19,7 @@ import BahanMQToram from './Post/BahanMQToram';
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename='/'>
         <Routes>
           <Route component={NotFound} />
           <Route path='/' element={<Home />}/>

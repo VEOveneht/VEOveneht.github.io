@@ -4,8 +4,7 @@
     padding: 1vh 1.5vh 1vh 1.5vh;
     position: fixed;
     bottom: 8vh;
-    right: 43.5vw;
-    left: 43.5vw;
+    right: 8vh;
     cursor: pointer;
     border-radius: 50px;
     background-color: var(--01);

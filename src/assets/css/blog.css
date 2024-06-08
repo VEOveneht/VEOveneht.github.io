@@ -63,7 +63,7 @@ div.support-card p {
     border-bottom: solid 2px black;
 }
 
-@media screen and (min-width: 555px) and (max-width: 1024px) {
+@media screen and (min-width: 650px) and (max-width: 1024px) {
 
     div.blog-card a {
         font-size: 1.8rem;
@@ -75,13 +75,12 @@ div.support-card p {
     }
 }
 
-@media screen and (min-width: 758px) {
+@media screen and (min-width: 768px) {
     div.main-wrapper {
         flex-direction: row;
         align-items: normal;
         gap: 3vh;
     }
-
 }
 
 @media screen and (min-width: 1025px) {

@@ -49,12 +49,19 @@ const Navigation = () => {
     };
 
     const banner = () => {
-        const sticky = 1000;
+        const sticky = 0;
         if (window.pageYOffset > sticky) {
             setIsBanner(true);
-            setUpIsVisible(true);
         } else {
             setIsBanner(false);
+        }
+    };
+
+    const goup = () => {
+        const sticky = 80;
+        if (window.pageYOffset > sticky) {
+            setUpIsVisible(true);
+        } else {
             setUpIsVisible(false);
         }
     };
@@ -62,42 +69,46 @@ const Navigation = () => {
     useEffect(() => {
         window.addEventListener('scroll', scroll);
         window.addEventListener('scroll', banner);
+        window.addEventListener('scroll', goup);
         return () => {
             window.removeEventListener('scroll', banner);
             window.removeEventListener('scroll', scroll);
+            window.addEventListener('scroll', goup);
         };
     }, []);
 
     return (
-    <header>
-        <p id='upper'></p>
-        <a className='scrollup' style={{opacity: upIsVisible ? '100%' : '0%'}} href='#upper'><img src={up} alt='up'/></a>
-        <nav role="navigation" className={isSticky ? 'sticky' : ''}>
-            <Link to='/' className="logo">LISAN<a id="blink" href>_</a></Link>
-            <div className='links'>
-                <Link className="list_nav" to="/" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Home</Link>
-                <Link className="list_nav" to="/blog" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Blog</Link>
-                <Link className="list_nav" to="/store" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Store</Link>
-                <Link className="list_nav" to="/portofolio" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Portofolio</Link>
-                <a className="list_nav" href={CV} download="Lisan Shidqi Farizan" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>CV</a>
-            </div>
-            <div className="sidebar" style={{ width: isSidebarVisible ? '100%' : '0' }}>
-                <p>LISAN<a id="blink" href>_</a></p>
-                <a id="close" onClick={hideSide} href><img src={Close} alt="close" style={{width: 25 }}/></a>
-                <div className='side'>
-                    <Link className="list_nav" to="/" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Home</Link>
-                    <Link className="list_nav" to="/blog" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Blog</Link>
-                    <Link className="list_nav" to="/store" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Store</Link>
-                    <Link className="list_nav" to="/portofolio" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Portofolio</Link>
-                    <a className="list_nav" href={CV} download="Lisan Shidqi Farizan" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>CV</a>
-                </div>
-            </div>
-            <a id="menu" onClick={showSide} href>
-                <img src={Menu} alt="menu" style={{width: 25}}/>
-            </a>
-        </nav>
-        <div className={isBanner ? 'banner': ''}></div>
-    </header>
+        <>
+            <header>
+                <p id='upper'></p>
+                <a className='scrollup' style={{opacity: upIsVisible ? '100%' : '0%'}} href='#upper'><img src={up} alt='up'/></a>
+                <nav role="navigation" className={isSticky ? 'sticky' : ''}>
+                    <Link to='/' className="logo">LISAN<a id="blink" href>_</a></Link>
+                    <div className='links'>
+                        <Link className="list_nav" to="/" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Home</Link>
+                        <Link className="list_nav" to="/blog" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Blog</Link>
+                        <Link className="list_nav" to="/store" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Store</Link>
+                        <Link className="list_nav" to="/portofolio" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Portofolio</Link>
+                        <a className="list_nav" href={CV} download="Lisan Shidqi Farizan" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>CV</a>
+                    </div>
+                    <div className="sidebar" style={{ width: isSidebarVisible ? '100%' : '0' }}>
+                        <p>LISAN<a id="blink" href>_</a></p>
+                        <a id="close" onClick={hideSide} href><img src={Close} alt="close" style={{width: 25 }}/></a>
+                        <div className='side'>
+                            <Link className="list_nav" to="/" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Home</Link>
+                            <Link className="list_nav" to="/blog" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Blog</Link>
+                            <Link className="list_nav" to="/store" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Store</Link>
+                            <Link className="list_nav" to="/portofolio" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Portofolio</Link>
+                            <a className="list_nav" href={CV} download="Lisan Shidqi Farizan" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>CV</a>
+                        </div>
+                    </div>
+                    <a id="menu" onClick={showSide} href>
+                        <img src={Menu} alt="menu" style={{width: 25}}/>
+                    </a>
+                </nav>
+            </header>
+            <div className={isBanner ? 'banner': ''}></div>
+        </>
     )
 }
 
