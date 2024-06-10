@@ -14,13 +14,12 @@ footer {
 }
 
 footer div {
-    gap: 20vh;
     transition: .3s;
 }
 
 footer div ul.foot_links {
     display: flex;
-    align-content: center;
+    justify-content: center;
     gap: 1vh;
     margin: 1vh;
 }
@@ -45,7 +44,9 @@ footer div ul.foot_links li a:hover {
 @media screen and (min-width: 758px) and (max-width: 1024px) {
     footer div {
         display: flex;
-        gap: 10vw;
+        justify-content: center;
+        align-items: center;
+        gap: 10vh;
     }
 }
 
@@ -54,6 +55,7 @@ footer div ul.foot_links li a:hover {
         display: flex;
         justify-content: center;
         align-items: center;
+        gap: 20vh
     }
 }
 

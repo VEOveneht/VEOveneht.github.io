@@ -5,8 +5,9 @@ import certHTML from "../assets/img/certificate/sololearn_html.png";
 import calc from "../assets/img/calc.png";
 
 
-import Navigation from "../Layout/Navigation";
-import Footer from "../Layout/Footer";
+// ! Components
+import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
 
 // ! CSS
 import '../assets/css/portofolio.css'

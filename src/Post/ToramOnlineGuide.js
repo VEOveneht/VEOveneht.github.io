@@ -1,14 +1,17 @@
 import React from 'react';
-import Navigation from '../Layout/Navigation';
-import Footer from '../Layout/Footer';
+
+
+// ! Components
+import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
 
 const ToramGuide = () => {
     return (
         <>
         <Navigation />
         <main>
-            <div className='container'>
-                <div className='wrap'>
+            <div className='main-wrapper'>
+                <div>
                     <h2>Toram Online GUIDE (ID)</h2>
                     <p>Halo Petualang, selamat datang di blog saya.</p>
                     <p>Seperti diketahui, 
@@ -41,7 +44,6 @@ const ToramGuide = () => {
                         Kamu bisa membuat pengaturan sendiri sesuai kebutuhan.
                     </p>
                     <br/>
-
                     <h2>Karakter</h2>
                     <p>
                         Toram Online guide berikutnya menunjukkan berbagai tipe karakter yang 

@@ -1,6 +1,8 @@
 import React from "react";
-import Navigation from "../Layout/Navigation";
-import Footer from "../Layout/Footer";
+
+// ! Components
+import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
 
 const Disclaimer = () => {
     return (
