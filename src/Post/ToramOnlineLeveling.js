@@ -1,4 +1,5 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 
 // ! Components
 import Navigation from '../components/Navigation';
@@ -8,6 +9,7 @@ import Footer from '../components/Footer';
 const Toram1 = () => {
     return(
     <>
+    <Helmet title='VEOveneht • Blog | Leveling Toram Online Level 1-255'/>
     <Navigation />
     <main>
         <div className="main-wrapper">
