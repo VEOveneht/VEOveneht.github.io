@@ -7,11 +7,14 @@ import veotoram from '../assets/img/veo-toram.jpg'
 
 
 import '../assets/css/blog.css';
+import { Helmet } from "react-helmet";
 
 
 const Blog = () => {
+    
     return (
     <>
+    <Helmet title='VEOveneht • Blog'/>
     <Navigation />
     <main>
         <div className='main-wrapper'>

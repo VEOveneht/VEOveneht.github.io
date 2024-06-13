@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Helmet } from "react-helmet";
 // ! Components
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
@@ -13,6 +13,7 @@ import twitter from'../assets/img/svg/twitter-x.svg';
 const Contact = () => {
     return (
     <>
+    <Helmet title='VEOveneht • Contact'/>
     <Navigation />
     <main className="contact-container">
         <br/>

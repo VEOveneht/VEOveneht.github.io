@@ -1,4 +1,5 @@
 import React from 'react';
+import Helmet from "react-helmet";
 import { Link } from 'react-router-dom';
 import mepng from "../assets/img/me.png";
 import certHTML from "../assets/img/certificate/sololearn_html.png";
@@ -15,6 +16,7 @@ import '../assets/css/portofolio.css'
 const Portofolio = () => {
     return(
     <>
+        <Helmet title='VEOveneht • Portfolio'/>
         <Navigation />
             <div className="container">
                 <div className="wrap">

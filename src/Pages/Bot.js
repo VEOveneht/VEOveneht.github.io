@@ -1,4 +1,5 @@
 import React from "react";
+import Helmet from "react-helmet";
 
 // ! Components
 import Navigation from '../components/Navigation';
@@ -8,6 +9,7 @@ import Footer from '../components/Footer';
 const Bot = () => {
     return (
         <>
+        <Helmet title='VEOveneht • Bot'/>
         <Navigation />
         <main>
             <div className="container">

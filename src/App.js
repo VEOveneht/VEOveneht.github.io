@@ -1,5 +1,4 @@
 import './App.css';
-
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NotFound from './NotFound';
 import Home from './Pages/Home';
@@ -18,12 +17,13 @@ import BahanMQToram from './Post/BahanMQToram';
 
 function App() {
   return (
+    <>
     <div className="App">
       <Router basename='/'>
         <Routes>
           <Route component={NotFound} />
           <Route path='/' element={<Home />}/>
-          <Route path='/blog' element={<Blog />}/>
+          <Route path='/blog' element={<Blog />} />
           <Route path='/VeoBot' element={<Bot />}/>
           <Route path='/about' element={<About />}/>
           <Route path='/store' element={<Store />}/>
@@ -38,6 +38,7 @@ function App() {
         </Routes>
       </Router>
     </div>
+    </>
   );
 }
 
