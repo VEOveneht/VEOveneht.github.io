@@ -1,0 +1,104 @@
+/* !Portofolio */
+div.wrap {
+    text-align: center;
+}
+
+div#profile_top {
+    width: 100%;
+}
+
+div#profile_top #mepng {
+    width: 32vh;
+    filter: drop-shadow(4px 4px 4px black);
+}
+
+div#profile_top {
+    width: 35vh;
+}
+
+div#my_project {
+    width: 100%;
+    text-align: center;
+}
+
+
+div.porto-card {
+    position: relative;
+    gap: 2px;
+    transition: .3s;
+}
+
+div.porto-card div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.porto-card div img {
+    width: 320px;
+}
+
+div.porto-card a {
+    margin: 2px 0px 10px 0px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: royalblue;
+    color: white;
+    transition: .3s ease-in;
+}
+
+div.porto-card a:hover {
+    background-color: blue;
+}
+
+@media screen and (min-width: 758px) and (max-width: 1024px) {
+    div#profile_top {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        width: 85vh;
+        gap: 1vh;
+        transition: .3s;
+    }
+
+    div#profile_top div {
+        width: 35vh;
+    }
+
+    div.porto-card {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+
+    div#profile_top {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        width: 100vh;
+        gap: 2vh;
+        transition: .3s;
+    }
+
+    div#profile_top div {
+        width: 35vh;
+    }
+
+    div.wrap {
+        width: 94vh;
+    }
+
+    div.porto-card {
+        display: flex;
+        justify-content: center;
+        gap: 120px;
+    }
+}
+
+/* !End Portofolio */
