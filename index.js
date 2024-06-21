@@ -7,7 +7,7 @@ navLinks.forEach((item) => {
         navLinks.forEach((otherItem) => {
             if(otherItem !== item) {
                 otherItem.style.color = "#a5a5a5"
-            }
+            } 
         })
     })
     item.addEventListener("mouseleave", () => {
