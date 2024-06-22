@@ -132,7 +132,7 @@ nav div.links .list_nav {
 }
 
 @media screen and (min-width: 758px) and (max-width: 1024px) {
-    a.logo {
+    p.logo {
         margin: 0vh auto 0vh 8vh;
     }
 
@@ -150,7 +150,7 @@ nav div.links .list_nav {
 }
 
 @media screen and (min-width: 1025px) {
-    a.logo {
+    p.logo {
         margin: 0vh auto 0vh 16vh;
     }
 
