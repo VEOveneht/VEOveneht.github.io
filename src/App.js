@@ -1,5 +1,5 @@
-import React, {useEffect} from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import React, {useEffect, useState} from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './components/Home';
 import Blog from './components/Blog';
 import Store from './components/Store';
@@ -8,17 +8,6 @@ import './App.css';
 
 const App = () => {
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.pageYOffset >= 1) {
-        document.getElementById('nav').classList.add('sticky');
-        document.getElementById('banner').classList.add('banner');
-      } else {
-        document.getElementById('nav').classList.remove('sticky');
-        document.getElementById('banner').classList.remove('banner');
-      }
-    };
-  
-    window.addEventListener('scroll', handleScroll);
   
     const handleMouseEnter = (e) => {
       document.querySelectorAll('.list_nav').forEach((otherItem) => {
@@ -40,25 +29,19 @@ const App = () => {
       item.addEventListener('mouseenter', handleMouseEnter);
       item.addEventListener('mouseleave', handleMouseLeave);
     });
-  
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-      document.querySelectorAll('.list_nav').forEach((item) => {
-        item.removeEventListener('mouseenter', handleMouseEnter);
-        item.removeEventListener('mouseleave', handleMouseLeave);
-      });
-    };
   }, []);
   
-  const showSide = () => {
-    document.getElementById('sidebar').style.display = 'block';
-  };
-  
+  const [sideWidth, setSideWidth] = useState('0%');
+
   const hideSide = () => {
-    document.getElementById('sidebar').style.display = 'none';
-  };
-  
+    setSideWidth('0%');
+  }
+  const showSide = () => {
+    setSideWidth('100%');
+  }
+
   return (
+    
     <Router>
       <nav role="navigation" id="nav">
         <p className="logo">LISAN<a id="blink" href>_</a></p>
@@ -67,7 +50,7 @@ const App = () => {
           <Link className="list_nav" to="/blog">Blog</Link>
           <Link className="list_nav" to="/store">Store</Link>
         </div>
-        <div id="sidebar">
+        <div id="sidebar" style={{width: sideWidth}}>
           <p>LISAN<a id="blink" href>_</a></p>
           <a id="close" onClick={hideSide} href><span className="material-symbols-outlined">close</span></a>
           <div className="side">
@@ -83,10 +66,10 @@ const App = () => {
 
       <main>
         <Routes>
-          <Route exact path="/" component={Home} />
-          <Route path="/blog" component={Blog} />
-          <Route path="/store" component={Store} />
-          <Route component={NotFound} />
+          <Route exact path="/" element={<Home/>} />
+          <Route path="/blog" element={<Blog/>} />
+          <Route path="/store" element={<Store/>} />
+          <Route element={<NotFound/>} />
         </Routes>
       </main>
 

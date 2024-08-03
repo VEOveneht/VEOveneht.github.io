@@ -1,4 +1,5 @@
 import React from 'react';
+import me from '../assets/img/me.png'
 
 const Home = () => {
     return(
@@ -6,7 +7,7 @@ const Home = () => {
             <div id="profile-wrap">
                 <aside id="sticky-profile">
                     <div id="profile">
-                        <img src="/assets/img/me.png" alt="Me" />
+                        <img src={me} alt="Me" />
                         <div>
                             <a href>
                                 <span class="material-symbols-outlined">
@@ -77,7 +78,7 @@ const Home = () => {
                             </li>
                         </ul>
                     </div><br />
-                    <div id="about">
+                    <div id="aboutme">
                         <h3>About Me</h3>
                         <p>I'm a College Student, I really like playing with code and I dedicate it especially in terms
                             of design. besides
@@ -86,7 +87,7 @@ const Home = () => {
                     </div>
                 </aside>
             </div>
-            <div id="aboutme">
+            <div id="about">
                 <ul>
                     <li><a class="link_list" href onClick={Project}>Project</a></li>
                     <li><a class="link_list" href onClick={FakeProject}>Fake Project</a></li>

@@ -22,6 +22,10 @@ body {
 
 main {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5vh 0vh 5vh 0vh;
+  gap: 20px;
 }
 
 a,
@@ -162,26 +166,19 @@ p.logoStyle {
 
 /* *End Navbar */
 
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 5vh 0vh 5vh 0vh;
-  gap: 20px;
-}
-
 div#profile-wrap {
   display: flex;
   justify-content: center;
-  width: 400px;
+  margin: 10px;
+  max-width: 400px;
 }
 
 /* *Aside */
 
 aside#sticky-profile {
   background-color: #555555;
-  width: 300px;
   padding: 25px;
+  margin: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -255,7 +252,7 @@ aside#sticky-profile div ul li a:hover {
   transform: scale(1.2);
 }
 
-aside#about {
+aside#aboutme {
   padding: 0vh 1vh 1vh 1vh;
 }
 
@@ -268,14 +265,14 @@ div.banner {
 
 /* *Section */
 
-div#aboutme {
+div#about {
   background-color: #555555;
   width: 90%;
   height: 100%;
   padding: 20px;
 }
 
-div#aboutme ul {
+div#about ul {
   display: flex;
   justify-content: end;
   gap: 1vh;
@@ -284,14 +281,14 @@ div#aboutme ul {
   border-bottom: solid 2px black;
 }
 
-div#aboutme ul li a.link_list {
+div#about ul li a.link_list {
   padding: 1vh;
   cursor: pointer;
   transition: .5s;
   font-size: small;
 }
 
-/* !Show div#aboutme for Function */
+/* !Show div#about for Function */
 #show_section #my_project {
   text-align: center;
 }
@@ -439,6 +436,10 @@ div.support-card p {
 }
 
 @media screen and (min-width: 650px) and (max-width: 1024px) {
+  div#profile-wrap {
+    width: 400px;
+  }
+
   div.blog-card {
     text-align: unset;
   }
@@ -458,6 +459,10 @@ div.support-card p {
 /* ? Tablet */
 
 @media screen and (min-width: 758px) and (max-width: 1024px) {
+  div#profile-wrap {
+    width: 400px;
+  }
+
   p.logo {
     margin: 0vh auto 0vh 8vh;
   }
@@ -483,7 +488,7 @@ div.support-card p {
 
   aside#sticky-profile {
     position: fixed;
-    top: 180px;
+    top: 100px;
     left: 10px;
     background-color: #555555;
     width: 250px;
@@ -492,13 +497,13 @@ div.support-card p {
     cursor: default;
   }
 
-  div#aboutme {
+  div#about {
     background-color: #555555;
     height: 100vh;
     border-radius: 25px;
   }
 
-  div#aboutme ul li a.link_list {
+  div#about ul li a.link_list {
     font-size: 16px;
   }
 
@@ -513,6 +518,10 @@ div.support-card p {
 /* ? End of Tablet */
 
 @media screen and (min-width: 768px) {
+  div#profile-wrap {
+    width: 400px;
+  }
+
   div.main-wrapper {
     flex-direction: row;
     align-items: normal;
@@ -527,6 +536,10 @@ div.support-card p {
 /* ? PC */
 
 @media screen and (min-width: 1025px) {
+  div#profile-wrap {
+    width: 400px;
+  }
+
   p.logo {
     margin: 0vh auto 0vh 16vh;
   }
@@ -553,7 +566,7 @@ div.support-card p {
 
   aside#sticky-profile {
     position: fixed;
-    top: 132px;
+    top: 100px;
     left: 50 px;
     background-color: #555555;
     width: 250px;
@@ -562,7 +575,7 @@ div.support-card p {
     cursor: default;
   }
 
-  div#aboutme {
+  div#about {
     align-items: end;
     background-color: #555555;
 
@@ -572,7 +585,7 @@ div.support-card p {
     border-radius: 25px;
   }
 
-  div#aboutme ul li a.link_list {
+  div#about ul li a.link_list {
     font-size: 16px;
   }
 
